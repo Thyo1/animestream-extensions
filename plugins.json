@@ -1,0 +1,615 @@
+[
+    {
+        "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://anichin.club&size=%size%",
+        "fileHash": "sha256-deea04355806c2161fdc4d89045256c8f85d73eb38119a40df9bb291bf836a5a",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Thyo1/animestream-extensions",
+        "fileSize": 34125,
+        "status": 1,
+        "language": "id",
+        "authors": [
+            "thyo"
+        ],
+        "tvTypes": [
+            "Anime",
+            "AnimeMovie",
+            "Cartoon"
+        ],
+        "version": 2,
+        "internalName": "AnichinProvider",
+        "description": "Anichin \u2014 Streaming Donghua Subtitle Indonesia",
+        "url": "https://raw.githubusercontent.com/Thyo1/animestream-extensions/builds/AnichinProvider.cs3",
+        "name": "AnichinProvider"
+    },
+    {
+        "iconUrl": "https://aghanim.xyz/wp-content/themes/animesail/assets/images/ico.png",
+        "fileHash": "sha256-e1837c284707138ea64afd4bb8ef94010fa9b7902d63768c8e4c17efeeebfd3c",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Thyo1/animestream-extensions",
+        "fileSize": 31806,
+        "status": 1,
+        "language": "id",
+        "authors": [
+            "thyo"
+        ],
+        "tvTypes": [
+            "AnimeMovie",
+            "Anime",
+            "OVA"
+        ],
+        "version": 6,
+        "internalName": "AnimeSailProvider",
+        "description": "AnimeSail \u2014 Streaming Anime, Donghua Subtitle Indonesia",
+        "url": "https://raw.githubusercontent.com/Thyo1/animestream-extensions/builds/AnimeSailProvider.cs3",
+        "name": "AnimeSailProvider"
+    },
+    {
+        "iconUrl": "https://animexin.dev/wp-content/uploads/2020/06/animexinv1.png",
+        "fileHash": "sha256-519d46b056ec1983c31263f84c9dfb6ee4c410daf097e677c4b0a274d02eea5d",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Thyo1/animestream-extensions",
+        "fileSize": 15220,
+        "status": 1,
+        "language": "id",
+        "authors": [
+            "thyo"
+        ],
+        "tvTypes": [
+            "AnimeMovie",
+            "Anime",
+            "Cartoon"
+        ],
+        "version": 1,
+        "internalName": "AnimexinProvider",
+        "description": "Animexin \u2014 Streaming Donghua Subtitle Indonesia",
+        "url": "https://raw.githubusercontent.com/Thyo1/animestream-extensions/builds/AnimexinProvider.cs3",
+        "name": "AnimexinProvider"
+    },
+    {
+        "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://anoboy.be&size=%size%",
+        "fileHash": "sha256-755194d351cb034446d0ef3e2f1dc2026c19487837d170be377da976456ad20b",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Thyo1/animestream-extensions",
+        "fileSize": 58743,
+        "status": 1,
+        "language": "id",
+        "authors": [
+            "thyo"
+        ],
+        "tvTypes": [
+            "AnimeMovie",
+            "OVA",
+            "Anime"
+        ],
+        "version": 1,
+        "internalName": "AnoboyProvider",
+        "description": "AnoBoy \u2014 Streaming Anime Subtitle Indonesia",
+        "url": "https://raw.githubusercontent.com/Thyo1/animestream-extensions/builds/AnoboyProvider.cs3",
+        "name": "AnoboyProvider"
+    },
+    {
+        "iconUrl": "https://klikxxi.me/wp-content/uploads/2024/02/cropped-site-icon.png",
+        "fileHash": "sha256-f62a836be0a22e313dbe9a891f22802416a52d9c138c75110e0077b0cf3fa05a",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Thyo1/animestream-extensions",
+        "fileSize": 237574,
+        "status": 1,
+        "language": "id",
+        "authors": [
+            "thyo"
+        ],
+        "tvTypes": [
+            "AsianDrama",
+            "TvSeries",
+            "Movie"
+        ],
+        "version": 1,
+        "internalName": "Cinemax21Provider",
+        "description": "CineMax21 \u2014 Streaming Movie and TV Series",
+        "url": "https://raw.githubusercontent.com/Thyo1/animestream-extensions/builds/Cinemax21Provider.cs3",
+        "name": "Cinemax21Provider"
+    },
+    {
+        "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://donghub.vip&size=%size%",
+        "fileHash": "sha256-ca6667e31ac654db7f18abbe9bfb6f73292a8bfc0d054a03f62fe5ba8a12771f",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Thyo1/animestream-extensions",
+        "fileSize": 19152,
+        "status": 1,
+        "language": "id",
+        "authors": [
+            "thyo"
+        ],
+        "tvTypes": [
+            "Anime",
+            "AnimeMovie",
+            "Cartoon"
+        ],
+        "version": 1,
+        "internalName": "DonghubProvider",
+        "description": "Donghub \u2014 Streaming Donghua Subtitle Indonesia",
+        "url": "https://raw.githubusercontent.com/Thyo1/animestream-extensions/builds/DonghubProvider.cs3",
+        "name": "DonghubProvider"
+    },
+    {
+        "iconUrl": "https://klikxxi.me/wp-content/uploads/2024/02/cropped-site-icon.png",
+        "fileHash": "sha256-b000eda2e444e28fc608bb9f506cc6640052c1e3122252e4a983bc74ac75088c",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Thyo1/animestream-extensions",
+        "fileSize": 231989,
+        "status": 1,
+        "language": "id",
+        "authors": [
+            "thyo"
+        ],
+        "tvTypes": [
+            "AsianDrama",
+            "TvSeries",
+            "Movie"
+        ],
+        "version": 1,
+        "internalName": "DrakorProvider",
+        "description": "Drakor \u2014 Streaming Drama Korean, Movie and TV Series",
+        "url": "https://raw.githubusercontent.com/Thyo1/animestream-extensions/builds/DrakorProvider.cs3",
+        "name": "DrakorProvider"
+    },
+    {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=www.dubbindo.site&sz=%size%",
+        "fileHash": "sha256-b90600d8741e6930331663d1e04cc3a19c01df5d4535d8ead8b7a8cd9c922e97",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Thyo1/animestream-extensions",
+        "fileSize": 26466,
+        "status": 1,
+        "language": "id",
+        "authors": [
+            "thyo"
+        ],
+        "tvTypes": [
+            "TvSeries",
+            "Movie",
+            "Cartoon",
+            "Anime"
+        ],
+        "version": 1,
+        "internalName": "DubbindoProvider",
+        "description": "Dubbindo \u2014 Streaming Anime, Movie and TV Series",
+        "url": "https://raw.githubusercontent.com/Thyo1/animestream-extensions/builds/DubbindoProvider.cs3",
+        "name": "DubbindoProvider"
+    },
+    {
+        "iconUrl": "https://offshorebankservices.com/wp-content/uploads/2022/07/cropped-dutamovie21-512x512-1-60x60.png",
+        "fileHash": "sha256-24aec26acbbe5ea1c81c1d9c2a71f55f8a2045960ccc669e05b4d270b235ee42",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Thyo1/animestream-extensions",
+        "fileSize": 29609,
+        "status": 1,
+        "language": "id",
+        "authors": [
+            "thyo"
+        ],
+        "tvTypes": [
+            "Movie",
+            "TvSeries",
+            "AsianDrama"
+        ],
+        "version": 1,
+        "internalName": "DutamovieProvider",
+        "description": "DutaMovie \u2014 Streaming Movie and TV Series",
+        "url": "https://raw.githubusercontent.com/Thyo1/animestream-extensions/builds/DutamovieProvider.cs3",
+        "name": "DutamovieProvider"
+    },
+    {
+        "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://v2.hidoristream.online&size=%size%",
+        "fileHash": "sha256-38c7efbfb690ba8fc304ea0d630c813925f65b32374327c343935bc583b19ae3",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Thyo1/animestream-extensions",
+        "fileSize": 49033,
+        "status": 1,
+        "language": "id",
+        "authors": [
+            "thyo"
+        ],
+        "tvTypes": [
+            "AnimeMovie",
+            "OVA",
+            "Anime"
+        ],
+        "version": 3,
+        "internalName": "HidoriStreamProvider",
+        "description": "HidoriStream \u2014 Streaming Anime Subtitle Indonesia",
+        "url": "https://raw.githubusercontent.com/Thyo1/animestream-extensions/builds/HidoriStreamProvider.cs3",
+        "name": "HidoriStreamProvider"
+    },
+    {
+        "iconUrl": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://idlixian.com&size=16",
+        "jarFileSize": 103815,
+        "fileHash": "sha256-757111803fc8aaf8fe4790d54fecedc2668c9f0086058736678fc293c3612a32",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Thyo1/animestream-extensions",
+        "fileSize": 27442,
+        "status": 1,
+        "language": "id",
+        "authors": [
+            "thyo"
+        ],
+        "tvTypes": [
+            "TvSeries",
+            "Movie",
+            "AsianDrama"
+        ],
+        "version": 2,
+        "internalName": "IdlixProvider",
+        "jarUrl": "https://raw.githubusercontent.com/Thyo1/animestream-extensions/builds/IdlixProvider.jar",
+        "description": "Idlix \u2014 Streaming Movie and TV Series",
+        "url": "https://raw.githubusercontent.com/Thyo1/animestream-extensions/builds/IdlixProvider.cs3",
+        "name": "IdlixProvider",
+        "jarHash": "sha256-59565d09b0a31b720cfa97b5cbd04a276ca222c0524d5b7029d0a69ca623e72f"
+    },
+    {
+        "iconUrl": "https://homecookingrocks.com/wp-content/uploads/2024/10/cropped-indomax21-favicon-color-1.png",
+        "fileHash": "sha256-cd5e59b43d366fe847be7aba8736940cad88cb6c80336e8bfdfe71f2918a3cf2",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Thyo1/animestream-extensions",
+        "fileSize": 26273,
+        "status": 1,
+        "language": "id",
+        "authors": [
+            "thyo"
+        ],
+        "tvTypes": [
+            "NSFW"
+        ],
+        "version": 3,
+        "internalName": "IndoMax21Provider",
+        "description": "IndoMax21 \u2014 Streaming Anime, Donghua, Hentai, Porn, Movie and TV Series",
+        "url": "https://raw.githubusercontent.com/Thyo1/animestream-extensions/builds/IndoMax21Provider.cs3",
+        "name": "IndoMax21Provider"
+    },
+    {
+        "iconUrl": "https://missav.ws/missav/logo-square.png",
+        "fileHash": "sha256-bf7b02473ca023ebc5c3a286ba4921df339815a554dc481f561f1628d80e0cb2",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Thyo1/animestream-extensions",
+        "fileSize": 22809,
+        "status": 1,
+        "language": "id",
+        "authors": [
+            "thyo"
+        ],
+        "tvTypes": [
+            "NSFW"
+        ],
+        "version": 2,
+        "internalName": "JavHeyProvider",
+        "description": "JavHey \u2014 Streaming Porn and JAV",
+        "url": "https://raw.githubusercontent.com/Thyo1/animestream-extensions/builds/JavHeyProvider.cs3",
+        "name": "JavHeyProvider"
+    },
+    {
+        "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://klikxxi.fit&size=%size%",
+        "fileHash": "sha256-c505ce26af9e1dcd931200a21a13be1b34ef1715bd664a09e6c4b49b36b14479",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Thyo1/animestream-extensions",
+        "fileSize": 21682,
+        "status": 1,
+        "language": "id",
+        "authors": [
+            "thyo"
+        ],
+        "tvTypes": [
+            "TvSeries",
+            "Movie"
+        ],
+        "version": 1,
+        "internalName": "KlikxxiProvider",
+        "description": "KlikXXI \u2014 Streaming Movie and TV Series",
+        "url": "https://raw.githubusercontent.com/Thyo1/animestream-extensions/builds/KlikxxiProvider.cs3",
+        "name": "KlikxxiProvider"
+    },
+    {
+        "iconUrl": "https://play-lh.googleusercontent.com/EFMkS1T-8txjLFIl9QxjcTRLa7a7Muv08C04b7ongYgodoY_b2T3GpxzGAQEx-eitfQ=w256",
+        "fileHash": "sha256-039ef9111bf970a15cf0ad5e8c57e5d25876f991d5624c0cec46b72909c2c075",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Thyo1/animestream-extensions",
+        "fileSize": 38388,
+        "status": 1,
+        "language": "id",
+        "authors": [
+            "Thyo"
+        ],
+        "tvTypes": [
+            "AnimeMovie",
+            "Anime",
+            "OVA"
+        ],
+        "version": 4,
+        "internalName": "KuronimeProvider",
+        "description": "Kuronime \u2014 Streaming Anime Subtitle Indonesia",
+        "url": "https://raw.githubusercontent.com/Thyo1/animestream-extensions/builds/KuronimeProvider.cs3",
+        "name": "KuronimeProvider"
+    },
+    {
+        "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://layarasia.site&size=%size%",
+        "fileHash": "sha256-601921fada37981b57b8ef4f9605077f340b0693d313aed58067a289d899b38d",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Thyo1/animestream-extensions",
+        "fileSize": 32525,
+        "status": 1,
+        "language": "id",
+        "authors": [
+            "thyo"
+        ],
+        "tvTypes": [
+            "AsianDrama",
+            "TvSeries",
+            "Movie"
+        ],
+        "version": 1,
+        "internalName": "LayarAsiaProvider",
+        "description": "LayarAsia \u2014 Streaming Drama Korean, Movie and TV Series",
+        "url": "https://raw.githubusercontent.com/Thyo1/animestream-extensions/builds/LayarAsiaProvider.cs3",
+        "name": "LayarAsiaProvider"
+    },
+    {
+        "iconUrl": "https://assets.lk21.party/favicons/apple-icon-144x144.png",
+        "fileHash": "sha256-fb00a5fe000eba42c2c1a78650a0174224b870f3e6b10a06d6266821555d287b",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Thyo1/animestream-extensions",
+        "fileSize": 33671,
+        "status": 1,
+        "language": "id",
+        "authors": [
+            "thyo"
+        ],
+        "tvTypes": [
+            "AsianDrama",
+            "TvSeries",
+            "Movie"
+        ],
+        "version": 1,
+        "internalName": "LayarKacaProvider",
+        "description": "LayarKaca \u2014 Streaming Movie Subtitle Indonesia",
+        "url": "https://raw.githubusercontent.com/Thyo1/animestream-extensions/builds/LayarKacaProvider.cs3",
+        "name": "LayarKacaProvider"
+    },
+    {
+        "iconUrl": "https://movieboxph.app/wp-content/uploads/2025/11/Movie-Box-icon.webp",
+        "fileHash": "sha256-d9957ded17c07b6045b776f00958645efd341e9ab768a2fa58764362f38c430e",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Thyo1/animestream-extensions",
+        "fileSize": 30801,
+        "status": 1,
+        "language": "id",
+        "authors": [
+            "thyo"
+        ],
+        "tvTypes": [
+            "TvSeries",
+            "Movie",
+            "Anime",
+            "AsianDrama"
+        ],
+        "version": 1,
+        "internalName": "MovieboxProvider",
+        "description": "MovieBox \u2014 Streaming Movie Subtitle Indonesia",
+        "url": "https://raw.githubusercontent.com/Thyo1/animestream-extensions/builds/MovieboxProvider.cs3",
+        "name": "MovieboxProvider"
+    },
+    {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=nekopoi.care&sz=%size%",
+        "fileHash": "sha256-c8103904364d5415752e7dbba43e752c78f48ab1c5a92fd66bc404b14837d3e4",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Thyo1/animestream-extensions",
+        "fileSize": 37488,
+        "status": 1,
+        "language": "id",
+        "authors": [
+            "thyo"
+        ],
+        "tvTypes": [
+            "NSFW"
+        ],
+        "version": 2,
+        "internalName": "NekopoiProvider",
+        "description": "NekoPoi \u2014 Streaming Hentai, Porn and JAV Subtitle Indonesia",
+        "url": "https://raw.githubusercontent.com/Thyo1/animestream-extensions/builds/NekopoiProvider.cs3",
+        "name": "NekopoiProvider"
+    },
+    {
+        "iconUrl": "https://new31.ngefilm.site/wp-content/uploads/2023/08/cropped-imageedit_8_4481000408-60x60.png",
+        "fileHash": "sha256-210d421fb91f27530bd94f7fa089d4c44c3fefe8f3fefb9cb6f82da655150a45",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Thyo1/animestream-extensions",
+        "fileSize": 31802,
+        "status": 1,
+        "language": "id",
+        "authors": [
+            "thyo"
+        ],
+        "tvTypes": [
+            "AsianDrama",
+            "TvSeries",
+            "Movie"
+        ],
+        "version": 1,
+        "internalName": "NgeFilm21Provider",
+        "description": "NgeFilm21 \u2014 Streaming Movie and TV Series",
+        "url": "https://raw.githubusercontent.com/Thyo1/animestream-extensions/builds/NgeFilm21Provider.cs3",
+        "name": "NgeFilm21Provider"
+    },
+    {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=nimegami.id&sz=%size%",
+        "fileHash": "sha256-9beba9924702ccb2730720dde144da0a1c0888e6cc80b6e5ee703411e758b18f",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Thyo1/animestream-extensions",
+        "fileSize": 24334,
+        "status": 1,
+        "language": "id",
+        "authors": [
+            "Hexated"
+        ],
+        "tvTypes": [
+            "AnimeMovie",
+            "Anime",
+            "OVA"
+        ],
+        "version": 1,
+        "internalName": "NimegamiProvider",
+        "description": "Nimegami \u2014 Streaming Anime Subtitle Indonesia",
+        "url": "https://raw.githubusercontent.com/Thyo1/animestream-extensions/builds/NimegamiProvider.cs3",
+        "name": "NimegamiProvider"
+    },
+    {
+        "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://nomat.site&size=%size%",
+        "fileHash": "sha256-3c703799ca749b35d7dd9be3c54df573b9174194adbfcda41d4a9c31ba0fcf35",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Thyo1/animestream-extensions",
+        "fileSize": 17528,
+        "status": 1,
+        "language": "id",
+        "authors": [
+            "thyo"
+        ],
+        "tvTypes": [
+            "AsianDrama",
+            "TvSeries",
+            "Movie"
+        ],
+        "version": 1,
+        "internalName": "NomatProvider",
+        "description": "Nomat \u2014 Streaming Movie and TV Series",
+        "url": "https://raw.githubusercontent.com/Thyo1/animestream-extensions/builds/NomatProvider.cs3",
+        "name": "NomatProvider"
+    },
+    {
+        "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://s11.nontonanimeid.boats&size=%size%",
+        "fileHash": "sha256-b352a1f0694309bddf36d46300d1b34f67af833a53edcb580167349293e48128",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Thyo1/animestream-extensions",
+        "fileSize": 41718,
+        "status": 1,
+        "language": "id",
+        "authors": [
+            "thyo"
+        ],
+        "tvTypes": [
+            "AnimeMovie",
+            "Anime",
+            "OVA"
+        ],
+        "version": 3,
+        "internalName": "NontonAnimeIDProvider",
+        "description": "NontonAnimeID \u2014 Streaming Anime Subtitle Indonesia",
+        "url": "https://raw.githubusercontent.com/Thyo1/animestream-extensions/builds/NontonAnimeIDProvider.cs3",
+        "name": "NontonAnimeIDProvider"
+    },
+    {
+        "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://45.11.57.243&size=%size%",
+        "fileHash": "sha256-0287a5e067e335fad81121cdc4a14aa4d6474d899fbbcf9bfd0b399a8dd8edb3",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Thyo1/animestream-extensions",
+        "fileSize": 25635,
+        "status": 1,
+        "language": "id",
+        "authors": [
+            "thyo"
+        ],
+        "tvTypes": [
+            "AsianDrama",
+            "TvSeries",
+            "Movie"
+        ],
+        "version": 1,
+        "internalName": "OppaDramaProvider",
+        "description": "OppaDrama \u2014 Streaming Drama Korean, Movie and TV Series",
+        "url": "https://raw.githubusercontent.com/Thyo1/animestream-extensions/builds/OppaDramaProvider.cs3",
+        "name": "OppaDramaProvider"
+    },
+    {
+        "iconUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr-sfek8gXmLpcAppEpaYbUDVtndQbCm_boh1-E91QrmSvsw-2l3-s2JOP&s=10",
+        "fileHash": "sha256-7c0d5b955aad95483821b3c22b5f8654f196887033e4e64a3461254bb6e259c0",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Thyo1/animestream-extensions",
+        "fileSize": 34986,
+        "status": 1,
+        "language": "id",
+        "authors": [
+            "thyo"
+        ],
+        "tvTypes": [
+            "AnimeMovie",
+            "Anime",
+            "OVA"
+        ],
+        "version": 4,
+        "internalName": "OtakudesuProvider",
+        "description": "OtakuDesu \u2014 Streaming Anime Subtitle Indonesia",
+        "url": "https://raw.githubusercontent.com/Thyo1/animestream-extensions/builds/OtakudesuProvider.cs3",
+        "name": "OtakudesuProvider"
+    },
+    {
+        "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://ww03.pencurimovie.bond&size=%size%",
+        "fileHash": "sha256-632c294fd007c0bd35c96b866b4ee13c6b75c855b0ee00653b622776cac3ecf3",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Thyo1/animestream-extensions",
+        "fileSize": 15660,
+        "status": 1,
+        "language": "id",
+        "authors": [
+            "thyo"
+        ],
+        "tvTypes": [
+            "Movie",
+            "TvSeries"
+        ],
+        "version": 1,
+        "internalName": "PencuriMovieProvider",
+        "description": "PencuriMovie \u2014 Streaming Movie and TV Series",
+        "url": "https://raw.githubusercontent.com/Thyo1/animestream-extensions/builds/PencuriMovieProvider.cs3",
+        "name": "PencuriMovieProvider"
+    },
+    {
+        "iconUrl": "https://lh3.googleusercontent.com/zwKn_6sdYOdIiWg6Gtnx-Ar2DrVamlADnPN8BE4f84-a9aRo2Zc7mxbW5Qd26Z8cPFc",
+        "fileHash": "sha256-8e4ab9840e53d4183d6b14a4fa90766909abf965306355fc6c0499908e59f7dc",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Thyo1/animestream-extensions",
+        "fileSize": 29877,
+        "status": 1,
+        "language": "id",
+        "authors": [
+            "thyo"
+        ],
+        "tvTypes": [
+            "AnimeMovie",
+            "OVA",
+            "Anime"
+        ],
+        "version": 3,
+        "internalName": "SamehadakuProvider",
+        "description": "Samehadaku \u2014 Streaming Anime Subtitle Indonesia",
+        "url": "https://raw.githubusercontent.com/Thyo1/animestream-extensions/builds/SamehadakuProvider.cs3",
+        "name": "SamehadakuProvider"
+    },
+    {
+        "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://winbu.net&size=%size%",
+        "fileHash": "sha256-231a83eee251100bc14c065fde29e4d44113e3f93f5cfe1873608a0bb824d3b2",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Thyo1/animestream-extensions",
+        "fileSize": 40956,
+        "status": 1,
+        "language": "id",
+        "authors": [
+            "thyo"
+        ],
+        "tvTypes": [
+            "Movie",
+            "Anime",
+            "TvSeries"
+        ],
+        "version": 4,
+        "internalName": "WinbuProvider",
+        "description": "Winbu \u2014 Streaming Anime, Movie and TV Series",
+        "url": "https://raw.githubusercontent.com/Thyo1/animestream-extensions/builds/WinbuProvider.cs3",
+        "name": "WinbuProvider"
+    }
+]
