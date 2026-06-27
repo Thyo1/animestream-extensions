@@ -4,7 +4,7 @@ import com.thyo.animestream.plugins.BasePlugin
 import com.thyo.animestream.plugins.AnimeStreamPlugin
 import com.thyo.animestream.extractors.Dailymotion
 
-@AnimeStreamPlugin
+@AnimeStreamPlugin @com.lagradost.cloudstream3.plugins.CloudstreamPlugin
 class AnimexinProvider: BasePlugin() {
     override fun load() {
         registerMainAPI(Animexin())

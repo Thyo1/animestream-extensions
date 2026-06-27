@@ -5,7 +5,7 @@ import com.thyo.animestream.plugins.BasePlugin
 import com.thyo.animestream.extractors.*
 import android.content.Context
 
-@AnimeStreamPlugin @com.lagradost.cloudstream3.plugins.CloudstreamPlugin 
+@AnimeStreamPlugin @com.lagradost.cloudstream3.plugins.CloudstreamPlugin  
 class OtakudesuProviderPlugin : BasePlugin() {
     override fun load() {
         registerMainAPI(OtakudesuProvider())
