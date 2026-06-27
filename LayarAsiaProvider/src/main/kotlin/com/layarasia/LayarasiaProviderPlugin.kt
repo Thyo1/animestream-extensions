@@ -7,7 +7,7 @@ import com.thyo.animestream.plugins.BasePlugin
 
 @AnimeStreamPlugin
 class LayarasiaProviderPlugin : BasePlugin() {
-    override fun load(context: Context) {
+    override fun load() {
         registerMainAPI(LayarasiaProvider())
         registerExtractorAPI(Smoothpre())
         registerExtractorAPI(EmturbovidExtractor())

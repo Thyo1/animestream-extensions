@@ -6,7 +6,7 @@ import android.content.Context
 
 @AnimeStreamPlugin
 class NontonAnimeIDProviderPlugin: BasePlugin() {
-    override fun load(context: Context) {
+    override fun load() {
         registerMainAPI(NontonAnimeIDProvider())
         registerExtractorAPI(Nontonanimeid())
         registerExtractorAPI(EmbedKotakAnimeid())

@@ -6,7 +6,7 @@ import android.content.Context
 
 @AnimeStreamPlugin
 class DrakorProviderPlugin : BasePlugin() {
-    override fun load(context: Context) {
+    override fun load() {
         registerMainAPI(DrakorProvider())
         registerExtractorAPI(Jeniusplay())
     }

@@ -7,7 +7,7 @@ import com.thyo.animestream.plugins.BasePlugin
 
 @AnimeStreamPlugin
 class HidoristreamProviderPlugin : BasePlugin() {
-    override fun load(context: Context) {
+    override fun load() {
         registerMainAPI(HidoristreamProvider())
         registerExtractorAPI(Dingtezuni())
         registerExtractorAPI(Bingezove())

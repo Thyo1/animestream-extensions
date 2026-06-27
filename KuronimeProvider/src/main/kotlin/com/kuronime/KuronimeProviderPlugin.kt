@@ -7,7 +7,7 @@ import android.content.Context
 
 @AnimeStreamPlugin
 class KuronimeProviderPlugin : BasePlugin() {
-    override fun load(context: Context) {
+    override fun load() {
         registerMainAPI(KuronimeProvider())
         registerExtractorAPI(PixelDrain())
         registerExtractorAPI(Gofile())

@@ -7,7 +7,7 @@ import android.content.Context
 
 @AnimeStreamPlugin
 class SamehadakuProviderPlugin : BasePlugin() {
-    override fun load(context: Context) {
+    override fun load() {
         registerMainAPI(SamehadakuProvider())
         registerExtractorAPI(PixelDrain())
         registerExtractorAPI(Gofile())

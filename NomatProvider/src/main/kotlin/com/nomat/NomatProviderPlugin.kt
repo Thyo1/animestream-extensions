@@ -6,7 +6,7 @@ import com.thyo.animestream.plugins.BasePlugin
 
 @AnimeStreamPlugin
 class NomatProviderPlugin : BasePlugin() {
-    override fun load(context: Context) {
+    override fun load() {
         registerMainAPI(NomatProvider())
         registerExtractorAPI(Hydrax())
     }

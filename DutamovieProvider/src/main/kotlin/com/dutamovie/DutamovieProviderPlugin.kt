@@ -6,7 +6,7 @@ import com.thyo.animestream.plugins.BasePlugin
 
 @AnimeStreamPlugin
 class DutamovieProviderPlugin : BasePlugin() {
-    override fun load(context: Context) {
+    override fun load() {
         registerMainAPI(DutamovieProvider())
         registerExtractorAPI(Dingtezuni())
         registerExtractorAPI(Movearnpre())

@@ -6,7 +6,7 @@ import com.thyo.animestream.plugins.BasePlugin
 
 @AnimeStreamPlugin
 class KlikxxiProviderPlugin : BasePlugin() {
-    override fun load(context: Context) {
+    override fun load() {
         registerMainAPI(KlikxxiProvider())
         registerExtractorAPI(Klixxistrp2p())
         registerExtractorAPI(Klixxiupns())

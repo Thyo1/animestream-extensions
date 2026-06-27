@@ -7,7 +7,7 @@ import android.content.Context
 
 @AnimeStreamPlugin
 class WinbuProviderPlugin : BasePlugin() {
-    override fun load(context: Context) {
+    override fun load() {
         registerMainAPI(WinbuProvider())
         registerExtractorAPI(PixelDrain())
         registerExtractorAPI(Gofile())

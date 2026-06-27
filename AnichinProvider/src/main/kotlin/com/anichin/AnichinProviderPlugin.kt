@@ -6,7 +6,7 @@ import com.thyo.animestream.plugins.BasePlugin
 
 @AnimeStreamPlugin
 class AnichinProviderPlugin: BasePlugin() {
-    override fun load(context: Context) {
+    override fun load() {
         registerMainAPI(AnichinProvider())
         registerExtractorAPI(Dailymotion())
         registerExtractorAPI(Geodailymotion())

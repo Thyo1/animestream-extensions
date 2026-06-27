@@ -6,7 +6,7 @@ import android.content.Context
 
 @AnimeStreamPlugin
 class Cinemax21ProviderPlugin : BasePlugin() {
-    override fun load(context: Context) {
+    override fun load() {
         registerMainAPI(Cinemax21Provider())
         registerExtractorAPI(Jeniusplay())
     }

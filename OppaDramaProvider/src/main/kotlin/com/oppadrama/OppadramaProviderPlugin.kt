@@ -7,7 +7,7 @@ import com.thyo.animestream.plugins.BasePlugin
 
 @AnimeStreamPlugin
 class OppadramaProviderPlugin : BasePlugin() {
-    override fun load(context: Context) {
+    override fun load() {
         registerMainAPI(OppadramaProvider())
         registerExtractorAPI(Smoothpre())
         registerExtractorAPI(EmturbovidExtractor())

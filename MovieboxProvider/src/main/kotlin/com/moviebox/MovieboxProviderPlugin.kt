@@ -6,7 +6,7 @@ import android.content.Context
 
 @AnimeStreamPlugin
 class MovieboxProviderPlugin : BasePlugin() {
-    override fun load(context: Context) {
+    override fun load() {
         registerMainAPI(MovieboxProvider())
     }
 }

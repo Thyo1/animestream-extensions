@@ -7,7 +7,7 @@ import android.content.Context
 
 @AnimeStreamPlugin
 class NimegamiPlugin : BasePlugin() {
-    override fun load(context: Context) {
+    override fun load() {
         registerMainAPI(Nimegami())
         registerExtractorAPI(DlganExtractor())
         registerExtractorAPI(BerkasDriveExtractor())

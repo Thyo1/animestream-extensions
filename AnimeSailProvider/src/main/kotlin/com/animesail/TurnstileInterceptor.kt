@@ -43,7 +43,7 @@ class TurnstileInterceptor(private val targetCookie: String = "_as_turnstile") :
             cookieManager.flush()
         }
 
-        val context = ContextHelper.context
+        val context = com.thyo.api.ContextHelper.context
             ?: return chain.proceed(originalRequest)
 
         val handler = Handler(Looper.getMainLooper())

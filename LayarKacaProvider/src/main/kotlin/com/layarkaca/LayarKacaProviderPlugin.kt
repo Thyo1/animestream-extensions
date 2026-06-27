@@ -6,7 +6,7 @@ import android.content.Context
 
 @AnimeStreamPlugin
 class LayarKacaPlugin : BasePlugin() {
-    override fun load(context: Context) {
+    override fun load() {
         registerMainAPI(LayarKacaProvider())
         registerExtractorAPI(EmturbovidExtractor())
         registerExtractorAPI(P2PExtractor())

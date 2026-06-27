@@ -7,7 +7,7 @@ import android.content.Context
 
 @AnimeStreamPlugin
 class OtakudesuProviderPlugin : BasePlugin() {
-    override fun load(context: Context) {
+    override fun load() {
         registerMainAPI(OtakudesuProvider())
         registerExtractorAPI(PixelDrain())
         registerExtractorAPI(Gofile())

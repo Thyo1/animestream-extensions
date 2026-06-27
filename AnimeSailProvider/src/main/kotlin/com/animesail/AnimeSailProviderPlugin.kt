@@ -6,7 +6,7 @@ import android.content.Context
 
 @AnimeStreamPlugin
 class AnimeSailProviderPlugin: BasePlugin() {
-    override fun load(context: Context) {
+    override fun load() {
         registerMainAPI(AnimeSailProvider())
     }
 }
