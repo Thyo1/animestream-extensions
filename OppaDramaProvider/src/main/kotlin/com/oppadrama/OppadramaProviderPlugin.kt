@@ -5,7 +5,7 @@ import com.thyo.animestream.plugins.AnimeStreamPlugin
 import com.thyo.animestream.plugins.BasePlugin
 
 
-@AnimeStreamPlugin
+@AnimeStreamPlugin @com.lagradost.cloudstream3.plugins.CloudstreamPlugin
 class OppadramaProviderPlugin : BasePlugin() {
     override fun load() {
         registerMainAPI(OppadramaProvider())

@@ -4,7 +4,7 @@ import android.content.Context
 import com.thyo.animestream.plugins.AnimeStreamPlugin
 import com.thyo.animestream.plugins.BasePlugin
 
-@AnimeStreamPlugin
+@AnimeStreamPlugin @com.lagradost.cloudstream3.plugins.CloudstreamPlugin
 class AnichinProviderPlugin: BasePlugin() {
     override fun load() {
         registerMainAPI(AnichinProvider())
