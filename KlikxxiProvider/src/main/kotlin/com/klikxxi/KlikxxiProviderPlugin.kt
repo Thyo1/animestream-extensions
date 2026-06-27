@@ -1,8 +1,8 @@
 package com.klikxxi
 
 import android.content.Context
-import com.thyo.animestream.plugins.AnimeStreamPlugin
-import com.thyo.animestream.plugins.Plugin
+import com.lagradost.cloudstream3.plugins.AnimeStreamPlugin
+import com.lagradost.cloudstream3.plugins.Plugin
 
 @AnimeStreamPlugin
 class KlikxxiProviderPlugin : Plugin() {

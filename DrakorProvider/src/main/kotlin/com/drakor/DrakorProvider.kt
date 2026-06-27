@@ -20,15 +20,15 @@ import com.drakor.DrakorProviderExtractor.invokeXprime
 import com.drakor.DrakorProviderExtractor.invokeCinemaOS
 import com.drakor.DrakorProviderExtractor.invokePlayer4U
 import com.drakor.DrakorProviderExtractor.invokeRiveStream
-import com.thyo.animestream.*
-import com.thyo.animestream.LoadResponse.Companion.addTrailer
-import com.thyo.animestream.metaproviders.TmdbProvider
-import com.thyo.animestream.LoadResponse.Companion.addImdbId
-import com.thyo.animestream.LoadResponse.Companion.addTMDbId
-import com.thyo.animestream.network.CloudflareKiller
-import com.thyo.animestream.utils.AppUtils.parseJson
-import com.thyo.animestream.utils.AppUtils.toJson
-import com.thyo.animestream.utils.ExtractorLink
+import com.lagradost.cloudstream3.*
+import com.lagradost.cloudstream3.LoadResponse.Companion.addTrailer
+import com.lagradost.cloudstream3.metaproviders.TmdbProvider
+import com.lagradost.cloudstream3.LoadResponse.Companion.addImdbId
+import com.lagradost.cloudstream3.LoadResponse.Companion.addTMDbId
+import com.lagradost.cloudstream3.network.CloudflareKiller
+import com.lagradost.cloudstream3.utils.AppUtils.parseJson
+import com.lagradost.cloudstream3.utils.AppUtils.toJson
+import com.lagradost.cloudstream3.utils.ExtractorLink
 
 open class DrakorProvider : TmdbProvider() {
     override var name = "Drakor"

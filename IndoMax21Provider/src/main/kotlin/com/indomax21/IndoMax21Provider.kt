@@ -1,7 +1,7 @@
 package com.indomax21
 
-import com.thyo.animestream.*
-import com.thyo.animestream.utils.*
+import com.lagradost.cloudstream3.*
+import com.lagradost.cloudstream3.utils.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.launch

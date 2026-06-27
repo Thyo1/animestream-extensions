@@ -2,14 +2,14 @@ package com.layarkaca
 
 import android.util.Base64
 import com.thyo.api.Log
-import com.thyo.animestream.app
-import com.thyo.animestream.utils.AppUtils.tryParseJson
-import com.thyo.animestream.utils.ExtractorApi
-import com.thyo.animestream.utils.ExtractorLink
-import com.thyo.animestream.utils.ExtractorLinkType
-import com.thyo.animestream.utils.Qualities
-import com.thyo.animestream.utils.newExtractorLink
-import com.thyo.animestream.utils.getQualityFromName
+import com.lagradost.cloudstream3.app
+import com.lagradost.cloudstream3.utils.AppUtils.tryParseJson
+import com.lagradost.cloudstream3.utils.ExtractorApi
+import com.lagradost.cloudstream3.utils.ExtractorLink
+import com.lagradost.cloudstream3.utils.ExtractorLinkType
+import com.lagradost.cloudstream3.utils.Qualities
+import com.lagradost.cloudstream3.utils.newExtractorLink
+import com.lagradost.cloudstream3.utils.getQualityFromName
 import java.net.URI
 import javax.crypto.Cipher
 import javax.crypto.spec.GCMParameterSpec

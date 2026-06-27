@@ -2,15 +2,15 @@ package com.idlix
 
 import com.idlix.IdlixProvider.ResponseSource
 import com.idlix.IdlixProvider.Tracks
-import com.thyo.animestream.SubtitleFile
-import com.thyo.animestream.app
-import com.thyo.animestream.newSubtitleFile
-import com.thyo.animestream.utils.AppUtils
-import com.thyo.animestream.utils.ExtractorApi
-import com.thyo.animestream.utils.ExtractorLink
-import com.thyo.animestream.utils.ExtractorLinkType
-import com.thyo.animestream.utils.getAndUnpack
-import com.thyo.animestream.utils.newExtractorLink
+import com.lagradost.cloudstream3.SubtitleFile
+import com.lagradost.cloudstream3.app
+import com.lagradost.cloudstream3.newSubtitleFile
+import com.lagradost.cloudstream3.utils.AppUtils
+import com.lagradost.cloudstream3.utils.ExtractorApi
+import com.lagradost.cloudstream3.utils.ExtractorLink
+import com.lagradost.cloudstream3.utils.ExtractorLinkType
+import com.lagradost.cloudstream3.utils.getAndUnpack
+import com.lagradost.cloudstream3.utils.newExtractorLink
 
 class Jeniusplay : ExtractorApi() {
     override var name = "Jeniusplay"

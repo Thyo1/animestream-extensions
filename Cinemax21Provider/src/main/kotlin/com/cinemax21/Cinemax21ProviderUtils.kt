@@ -2,12 +2,12 @@ package com.cinemax21
 
 import android.util.Base64
 import com.cinemax21.Cinemax21Provider.Companion.anilistAPI
-import com.thyo.animestream.*
-import com.thyo.animestream.APIHolder.unixTimeMS
-import com.thyo.animestream.mvvm.logError
-import com.thyo.animestream.utils.*
-import com.thyo.animestream.utils.AppUtils.toJson
-import com.thyo.animestream.utils.AppUtils.tryParseJson
+import com.lagradost.cloudstream3.*
+import com.lagradost.cloudstream3.APIHolder.unixTimeMS
+import com.lagradost.cloudstream3.mvvm.logError
+import com.lagradost.cloudstream3.utils.*
+import com.lagradost.cloudstream3.utils.AppUtils.toJson
+import com.lagradost.cloudstream3.utils.AppUtils.tryParseJson
 import com.lagradost.nicehttp.RequestBodyTypes
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.RequestBody.Companion.toRequestBody

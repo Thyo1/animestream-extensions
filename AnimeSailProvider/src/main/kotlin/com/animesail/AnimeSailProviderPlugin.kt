@@ -1,7 +1,7 @@
 package com.animesail
 
-import com.thyo.animestream.plugins.AnimeStreamPlugin
-import com.thyo.animestream.plugins.Plugin
+import com.lagradost.cloudstream3.plugins.AnimeStreamPlugin
+import com.lagradost.cloudstream3.plugins.Plugin
 import android.content.Context
 
 @AnimeStreamPlugin

@@ -1,13 +1,13 @@
 package com.dubbindo
 
-import com.thyo.animestream.*
-import com.thyo.animestream.utils.AppUtils.toJson
-import com.thyo.animestream.utils.AppUtils.tryParseJson
-import com.thyo.animestream.utils.ExtractorLink
-import com.thyo.animestream.utils.INFER_TYPE
-import com.thyo.animestream.utils.Qualities
-import com.thyo.animestream.utils.loadExtractor
-import com.thyo.animestream.utils.newExtractorLink
+import com.lagradost.cloudstream3.*
+import com.lagradost.cloudstream3.utils.AppUtils.toJson
+import com.lagradost.cloudstream3.utils.AppUtils.tryParseJson
+import com.lagradost.cloudstream3.utils.ExtractorLink
+import com.lagradost.cloudstream3.utils.INFER_TYPE
+import com.lagradost.cloudstream3.utils.Qualities
+import com.lagradost.cloudstream3.utils.loadExtractor
+import com.lagradost.cloudstream3.utils.newExtractorLink
 import org.jsoup.nodes.Document
 import org.jsoup.nodes.Element
 import com.dubbindo.BuildConfig

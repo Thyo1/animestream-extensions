@@ -1,11 +1,11 @@
 package com.moviebox
 
 import com.fasterxml.jackson.annotation.JsonProperty
-import com.thyo.animestream.*
-import com.thyo.animestream.LoadResponse.Companion.addTrailer
-import com.thyo.animestream.utils.*
-import com.thyo.animestream.utils.AppUtils.parseJson
-import com.thyo.animestream.utils.AppUtils.toJson
+import com.lagradost.cloudstream3.*
+import com.lagradost.cloudstream3.LoadResponse.Companion.addTrailer
+import com.lagradost.cloudstream3.utils.*
+import com.lagradost.cloudstream3.utils.AppUtils.parseJson
+import com.lagradost.cloudstream3.utils.AppUtils.toJson
 import com.lagradost.nicehttp.RequestBodyTypes
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.RequestBody.Companion.toRequestBody

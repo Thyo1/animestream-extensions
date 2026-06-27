@@ -1,11 +1,11 @@
 package com.anichin
 
-import com.thyo.animestream.SubtitleFile
-import com.thyo.animestream.newSubtitleFile
-import com.thyo.animestream.app
-import com.thyo.animestream.utils.ExtractorApi
-import com.thyo.animestream.utils.ExtractorLink
-import com.thyo.animestream.utils.M3u8Helper.Companion.generateM3u8
+import com.lagradost.cloudstream3.SubtitleFile
+import com.lagradost.cloudstream3.newSubtitleFile
+import com.lagradost.cloudstream3.app
+import com.lagradost.cloudstream3.utils.ExtractorApi
+import com.lagradost.cloudstream3.utils.ExtractorLink
+import com.lagradost.cloudstream3.utils.M3u8Helper.Companion.generateM3u8
 import java.net.URI
 
 class Geodailymotion : Dailymotion() {

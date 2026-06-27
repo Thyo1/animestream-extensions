@@ -2,17 +2,17 @@ package com.anichin
 
 import android.util.Log
 import com.fasterxml.jackson.annotation.JsonProperty
-import com.thyo.animestream.ErrorLoadingException
-import com.thyo.animestream.SubtitleFile
-import com.thyo.animestream.USER_AGENT
-import com.thyo.animestream.app
-import com.thyo.animestream.utils.AppUtils
-import com.thyo.animestream.utils.ExtractorApi
-import com.thyo.animestream.utils.ExtractorLink
-import com.thyo.animestream.utils.ExtractorLinkType
-import com.thyo.animestream.utils.INFER_TYPE
-import com.thyo.animestream.utils.getQualityFromName
-import com.thyo.animestream.utils.newExtractorLink
+import com.lagradost.cloudstream3.ErrorLoadingException
+import com.lagradost.cloudstream3.SubtitleFile
+import com.lagradost.cloudstream3.USER_AGENT
+import com.lagradost.cloudstream3.app
+import com.lagradost.cloudstream3.utils.AppUtils
+import com.lagradost.cloudstream3.utils.ExtractorApi
+import com.lagradost.cloudstream3.utils.ExtractorLink
+import com.lagradost.cloudstream3.utils.ExtractorLinkType
+import com.lagradost.cloudstream3.utils.INFER_TYPE
+import com.lagradost.cloudstream3.utils.getQualityFromName
+import com.lagradost.cloudstream3.utils.newExtractorLink
 
 
 class OkRuSSL : Odnoklassniki() {

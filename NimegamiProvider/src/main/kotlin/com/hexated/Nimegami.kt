@@ -1,12 +1,12 @@
 package com.hexated
 
 import com.fasterxml.jackson.annotation.JsonProperty
-import com.thyo.animestream.*
-import com.thyo.animestream.LoadResponse.Companion.addAniListId
-import com.thyo.animestream.LoadResponse.Companion.addMalId
-import com.thyo.animestream.LoadResponse.Companion.addTrailer
-import com.thyo.animestream.utils.*
-import com.thyo.animestream.utils.AppUtils.tryParseJson
+import com.lagradost.cloudstream3.*
+import com.lagradost.cloudstream3.LoadResponse.Companion.addAniListId
+import com.lagradost.cloudstream3.LoadResponse.Companion.addMalId
+import com.lagradost.cloudstream3.LoadResponse.Companion.addTrailer
+import com.lagradost.cloudstream3.utils.*
+import com.lagradost.cloudstream3.utils.AppUtils.tryParseJson
 import kotlinx.coroutines.runBlocking
 import org.jsoup.nodes.Element
 import org.jsoup.select.Elements

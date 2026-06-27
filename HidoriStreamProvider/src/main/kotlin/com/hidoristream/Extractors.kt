@@ -1,22 +1,22 @@
 package com.hidoristream
 
-import com.thyo.animestream.app
-import com.thyo.animestream.utils.ExtractorApi
-import com.thyo.animestream.utils.ExtractorLink
-import com.thyo.animestream.utils.*
-import com.thyo.animestream.USER_AGENT
-import com.thyo.animestream.SubtitleFile
-import com.thyo.animestream.utils.M3u8Helper.Companion.generateM3u8
-import com.thyo.animestream.utils.ExtractorLinkType
-import com.thyo.animestream.utils.Qualities
-import com.thyo.animestream.extractors.StreamWishExtractor
-import com.thyo.animestream.extractors.VidStack
+import com.lagradost.cloudstream3.app
+import com.lagradost.cloudstream3.utils.ExtractorApi
+import com.lagradost.cloudstream3.utils.ExtractorLink
+import com.lagradost.cloudstream3.utils.*
+import com.lagradost.cloudstream3.USER_AGENT
+import com.lagradost.cloudstream3.SubtitleFile
+import com.lagradost.cloudstream3.utils.M3u8Helper.Companion.generateM3u8
+import com.lagradost.cloudstream3.utils.ExtractorLinkType
+import com.lagradost.cloudstream3.utils.Qualities
+import com.lagradost.cloudstream3.extractors.StreamWishExtractor
+import com.lagradost.cloudstream3.extractors.VidStack
 import java.net.URI
 import com.fasterxml.jackson.annotation.JsonProperty
-import com.thyo.animestream.utils.newExtractorLink
+import com.lagradost.cloudstream3.utils.newExtractorLink
 import org.json.JSONObject
-import com.thyo.animestream.utils.HlsPlaylistParser
-import com.thyo.animestream.utils.INFER_TYPE
+import com.lagradost.cloudstream3.utils.HlsPlaylistParser
+import com.lagradost.cloudstream3.utils.INFER_TYPE
 
 class Movearnpre : Dingtezuni() {
     override var name = "Movearnpre"

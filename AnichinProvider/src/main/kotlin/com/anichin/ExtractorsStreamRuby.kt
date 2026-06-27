@@ -1,12 +1,12 @@
 package com.anichin
 
 import android.util.Log
-import com.thyo.animestream.app
-import com.thyo.animestream.utils.ExtractorApi 
-import com.thyo.animestream.utils.ExtractorLink
-import com.thyo.animestream.SubtitleFile
-import com.thyo.animestream.utils.M3u8Helper
-import com.thyo.animestream.utils.*
+import com.lagradost.cloudstream3.app
+import com.lagradost.cloudstream3.utils.ExtractorApi 
+import com.lagradost.cloudstream3.utils.ExtractorLink
+import com.lagradost.cloudstream3.SubtitleFile
+import com.lagradost.cloudstream3.utils.M3u8Helper
+import com.lagradost.cloudstream3.utils.*
 import kotlin.text.Regex
 
 open class StreamRuby : ExtractorApi() {

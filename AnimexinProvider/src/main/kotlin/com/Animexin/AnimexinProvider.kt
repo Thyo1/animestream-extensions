@@ -1,8 +1,8 @@
 package com.Animexin
 
-import com.thyo.animestream.plugins.BasePlugin
-import com.thyo.animestream.plugins.AnimeStreamPlugin
-import com.thyo.animestream.extractors.Dailymotion
+import com.lagradost.cloudstream3.plugins.BasePlugin
+import com.lagradost.cloudstream3.plugins.AnimeStreamPlugin
+import com.lagradost.cloudstream3.extractors.Dailymotion
 
 @AnimeStreamPlugin
 class AnimexinProvider: BasePlugin() {

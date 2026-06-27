@@ -1,16 +1,16 @@
 package com.Animexin
 
 
-import com.thyo.animestream.app
-import com.thyo.animestream.extractors.Filesim
-import com.thyo.animestream.extractors.StreamSB
-import com.thyo.animestream.extractors.StreamWishExtractor
-import com.thyo.animestream.utils.ExtractorApi
-import com.thyo.animestream.utils.ExtractorLink
-import com.thyo.animestream.utils.ExtractorLinkType
-import com.thyo.animestream.utils.JsUnpacker
-import com.thyo.animestream.utils.Qualities
-import com.thyo.animestream.utils.newExtractorLink
+import com.lagradost.cloudstream3.app
+import com.lagradost.cloudstream3.extractors.Filesim
+import com.lagradost.cloudstream3.extractors.StreamSB
+import com.lagradost.cloudstream3.extractors.StreamWishExtractor
+import com.lagradost.cloudstream3.utils.ExtractorApi
+import com.lagradost.cloudstream3.utils.ExtractorLink
+import com.lagradost.cloudstream3.utils.ExtractorLinkType
+import com.lagradost.cloudstream3.utils.JsUnpacker
+import com.lagradost.cloudstream3.utils.Qualities
+import com.lagradost.cloudstream3.utils.newExtractorLink
 import kotlin.text.Regex
 
 open class Vtbe : ExtractorApi() {

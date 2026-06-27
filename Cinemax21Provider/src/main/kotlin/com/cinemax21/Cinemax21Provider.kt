@@ -20,15 +20,15 @@ import com.cinemax21.Cinemax21ProviderExtractor.invokeXprime
 import com.cinemax21.Cinemax21ProviderExtractor.invokeCinemaOS
 import com.cinemax21.Cinemax21ProviderExtractor.invokePlayer4U
 import com.cinemax21.Cinemax21ProviderExtractor.invokeRiveStream
-import com.thyo.animestream.*
-import com.thyo.animestream.LoadResponse.Companion.addTrailer
-import com.thyo.animestream.metaproviders.TmdbProvider
-import com.thyo.animestream.LoadResponse.Companion.addImdbId
-import com.thyo.animestream.LoadResponse.Companion.addTMDbId
-import com.thyo.animestream.network.CloudflareKiller
-import com.thyo.animestream.utils.AppUtils.parseJson
-import com.thyo.animestream.utils.AppUtils.toJson
-import com.thyo.animestream.utils.ExtractorLink
+import com.lagradost.cloudstream3.*
+import com.lagradost.cloudstream3.LoadResponse.Companion.addTrailer
+import com.lagradost.cloudstream3.metaproviders.TmdbProvider
+import com.lagradost.cloudstream3.LoadResponse.Companion.addImdbId
+import com.lagradost.cloudstream3.LoadResponse.Companion.addTMDbId
+import com.lagradost.cloudstream3.network.CloudflareKiller
+import com.lagradost.cloudstream3.utils.AppUtils.parseJson
+import com.lagradost.cloudstream3.utils.AppUtils.toJson
+import com.lagradost.cloudstream3.utils.ExtractorLink
 
 open class Cinemax21Provider : TmdbProvider() {
     override var name = "CineMax21"

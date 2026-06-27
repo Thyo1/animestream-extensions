@@ -1,8 +1,8 @@
 package com.hexated
 
-import com.thyo.animestream.*
-import com.thyo.animestream.SubtitleFile
-import com.thyo.animestream.utils.*
+import com.lagradost.cloudstream3.*
+import com.lagradost.cloudstream3.SubtitleFile
+import com.lagradost.cloudstream3.utils.*
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.RequestBody
 import org.json.JSONObject

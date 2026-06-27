@@ -1,20 +1,20 @@
 package com.nomat
 
-import com.thyo.animestream.*
-import com.thyo.animestream.LoadResponse.Companion.addActors
-import com.thyo.animestream.LoadResponse.Companion.addTrailer
-import com.thyo.animestream.LoadResponse.Companion.addScore
-import com.thyo.animestream.MainAPI
-import com.thyo.animestream.SearchResponse
-import com.thyo.animestream.TvType
-import com.thyo.animestream.mainPageOf
-import com.thyo.animestream.utils.ExtractorLink
-import com.thyo.animestream.utils.httpsify
-import com.thyo.animestream.utils.loadExtractor
+import com.lagradost.cloudstream3.*
+import com.lagradost.cloudstream3.LoadResponse.Companion.addActors
+import com.lagradost.cloudstream3.LoadResponse.Companion.addTrailer
+import com.lagradost.cloudstream3.LoadResponse.Companion.addScore
+import com.lagradost.cloudstream3.MainAPI
+import com.lagradost.cloudstream3.SearchResponse
+import com.lagradost.cloudstream3.TvType
+import com.lagradost.cloudstream3.mainPageOf
+import com.lagradost.cloudstream3.utils.ExtractorLink
+import com.lagradost.cloudstream3.utils.httpsify
+import com.lagradost.cloudstream3.utils.loadExtractor
 import java.net.URI
 import org.jsoup.nodes.Element
-import com.thyo.animestream.mvvm.logError
-import com.thyo.animestream.base64Decode
+import com.lagradost.cloudstream3.mvvm.logError
+import com.lagradost.cloudstream3.base64Decode
 
 class NomatProvider : MainAPI() {
     companion object {

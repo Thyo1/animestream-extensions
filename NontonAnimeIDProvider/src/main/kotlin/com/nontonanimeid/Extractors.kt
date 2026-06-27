@@ -1,17 +1,17 @@
 package com.nontonanimeid
 
 import com.fasterxml.jackson.annotation.JsonProperty
-import com.thyo.animestream.APIHolder
-import com.thyo.animestream.SubtitleFile
-import com.thyo.animestream.app
-import com.thyo.animestream.extractors.Filesim
-import com.thyo.animestream.extractors.Hxfile
-import com.thyo.animestream.utils.ExtractorApi
-import com.thyo.animestream.utils.ExtractorLink
-import com.thyo.animestream.utils.INFER_TYPE
-import com.thyo.animestream.utils.Qualities
-import com.thyo.animestream.extractors.VidStack
-import com.thyo.animestream.utils.newExtractorLink
+import com.lagradost.cloudstream3.APIHolder
+import com.lagradost.cloudstream3.SubtitleFile
+import com.lagradost.cloudstream3.app
+import com.lagradost.cloudstream3.extractors.Filesim
+import com.lagradost.cloudstream3.extractors.Hxfile
+import com.lagradost.cloudstream3.utils.ExtractorApi
+import com.lagradost.cloudstream3.utils.ExtractorLink
+import com.lagradost.cloudstream3.utils.INFER_TYPE
+import com.lagradost.cloudstream3.utils.Qualities
+import com.lagradost.cloudstream3.extractors.VidStack
+import com.lagradost.cloudstream3.utils.newExtractorLink
 
 open class Gdplayer : ExtractorApi() {
     override val name = "Gdplayer"
