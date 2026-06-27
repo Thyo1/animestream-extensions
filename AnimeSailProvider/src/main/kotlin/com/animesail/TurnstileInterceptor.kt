@@ -1,6 +1,7 @@
 package com.animesail
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.net.http.SslError
 import android.os.Handler
 import android.os.Looper
@@ -8,7 +9,6 @@ import android.webkit.CookieManager
 import android.webkit.SslErrorHandler
 import android.webkit.WebView
 import android.webkit.WebViewClient
-import com.thyo.api.ContextHelper
 import okhttp3.Interceptor
 import okhttp3.Response
 import java.util.concurrent.atomic.AtomicReference
@@ -43,8 +43,14 @@ class TurnstileInterceptor(private val targetCookie: String = "_as_turnstile") :
             cookieManager.flush()
         }
 
-        val context = com.thyo.api.ContextHelper.context
-            ?: return chain.proceed(originalRequest)
+        // [TRIK NINJA] Mengambil Context langsung dari mesin Android tanpa butuh ContextHelper
+        val context = try {
+            Class.forName("android.app.ActivityThread")
+                .getMethod("currentApplication")
+                .invoke(null) as? Context
+        } catch (e: Exception) {
+            null
+        } ?: return chain.proceed(originalRequest)
 
         val handler = Handler(Looper.getMainLooper())
         val userAgentRef = AtomicReference(originalRequest.header("User-Agent") ?: "")
