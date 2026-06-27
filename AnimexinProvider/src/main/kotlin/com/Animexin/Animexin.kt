@@ -22,7 +22,7 @@ class Animexin : MainAPI() {
     )
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
-val document = app.get("$mainUrl/${request.data}&page=$page").documentLarge
+        val document = app.get("$mainUrl/${request.data}&page=$page").documentLarge
         val home     = document.select("div.listupd > article").mapNotNull { it.toSearchResult() }
 
         return newHomePageResponse(
@@ -44,9 +44,8 @@ val document = app.get("$mainUrl/${request.data}&page=$page").documentLarge
         }
     }
 
-
-    override suspend fun search(query: String,page: Int): List<SearchResponse> {
-        val document = app.get("${mainUrl}/page/$page/?s=$query").documentLarge
+    override suspend fun search(query: String): List<SearchResponse> {
+        val document = app.get("${mainUrl}/page/1/?s=$query").documentLarge
         val results = document.select("div.listupd > article").mapNotNull { it.toSearchResult() }
         return results
     }
