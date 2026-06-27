@@ -105,6 +105,6 @@ tasks.register<Delete>("clean") {
 
 subprojects {
     dependencies {
-        add("compileOnly", "com.github.Thyo1.animestream:library:-SNAPSHOT")
+        add("compileOnly", "com.github.Thyo1.animestream:library:1e0ee756d8")
     }
 }
