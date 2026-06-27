@@ -2,10 +2,10 @@ package com.donghub
 
 import android.content.Context
 import com.thyo.animestream.plugins.AnimeStreamPlugin
-import com.thyo.animestream.plugins.Plugin
+import com.thyo.animestream.plugins.BasePlugin
 
 @AnimeStreamPlugin
-class DonghubProviderPlugin: Plugin() {
+class DonghubProviderPlugin: BasePlugin() {
     override fun load(context: Context) {
         registerMainAPI(DonghubProvider())
         registerExtractorAPI(ArchiveOrgExtractor())

@@ -2,10 +2,10 @@ package com.dutamovie
 
 import android.content.Context
 import com.thyo.animestream.plugins.AnimeStreamPlugin
-import com.thyo.animestream.plugins.Plugin
+import com.thyo.animestream.plugins.BasePlugin
 
 @AnimeStreamPlugin
-class DutamovieProviderPlugin : Plugin() {
+class DutamovieProviderPlugin : BasePlugin() {
     override fun load(context: Context) {
         registerMainAPI(DutamovieProvider())
         registerExtractorAPI(Dingtezuni())

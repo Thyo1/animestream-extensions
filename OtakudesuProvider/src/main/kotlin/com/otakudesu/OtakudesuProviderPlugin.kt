@@ -1,12 +1,12 @@
 package com.otakudesu
 
 import com.thyo.animestream.plugins.AnimeStreamPlugin
-import com.thyo.animestream.plugins.Plugin
+import com.thyo.animestream.plugins.BasePlugin
 import com.thyo.animestream.extractors.*
 import android.content.Context
 
 @AnimeStreamPlugin
-class OtakudesuProviderPlugin : Plugin() {
+class OtakudesuProviderPlugin : BasePlugin() {
     override fun load(context: Context) {
         registerMainAPI(OtakudesuProvider())
         registerExtractorAPI(PixelDrain())

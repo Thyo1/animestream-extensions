@@ -1,11 +1,11 @@
 package com.nontonanimeid
 
 import com.thyo.animestream.plugins.AnimeStreamPlugin
-import com.thyo.animestream.plugins.Plugin
+import com.thyo.animestream.plugins.BasePlugin
 import android.content.Context
 
 @AnimeStreamPlugin
-class NontonAnimeIDProviderPlugin: Plugin() {
+class NontonAnimeIDProviderPlugin: BasePlugin() {
     override fun load(context: Context) {
         registerMainAPI(NontonAnimeIDProvider())
         registerExtractorAPI(Nontonanimeid())

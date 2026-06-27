@@ -1,12 +1,12 @@
 package com.winbu
 
 import com.thyo.animestream.plugins.AnimeStreamPlugin
-import com.thyo.animestream.plugins.Plugin
+import com.thyo.animestream.plugins.BasePlugin
 import com.thyo.animestream.extractors.*
 import android.content.Context
 
 @AnimeStreamPlugin
-class WinbuProviderPlugin : Plugin() {
+class WinbuProviderPlugin : BasePlugin() {
     override fun load(context: Context) {
         registerMainAPI(WinbuProvider())
         registerExtractorAPI(PixelDrain())

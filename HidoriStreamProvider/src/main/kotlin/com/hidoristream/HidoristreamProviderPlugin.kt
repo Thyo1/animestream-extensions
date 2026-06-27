@@ -2,11 +2,11 @@ package com.hidoristream
 
 import android.content.Context
 import com.thyo.animestream.plugins.AnimeStreamPlugin
-import com.thyo.animestream.plugins.Plugin
+import com.thyo.animestream.plugins.BasePlugin
 
 
 @AnimeStreamPlugin
-class HidoristreamProviderPlugin : Plugin() {
+class HidoristreamProviderPlugin : BasePlugin() {
     override fun load(context: Context) {
         registerMainAPI(HidoristreamProvider())
         registerExtractorAPI(Dingtezuni())

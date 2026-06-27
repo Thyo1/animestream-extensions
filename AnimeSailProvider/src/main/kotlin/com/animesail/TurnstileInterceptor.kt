@@ -8,7 +8,7 @@ import android.webkit.CookieManager
 import android.webkit.SslErrorHandler
 import android.webkit.WebView
 import android.webkit.WebViewClient
-import com.thyo.animestream.AcraApplication
+import com.thyo.api.ContextHelper
 import okhttp3.Interceptor
 import okhttp3.Response
 import java.util.concurrent.atomic.AtomicReference
@@ -43,7 +43,7 @@ class TurnstileInterceptor(private val targetCookie: String = "_as_turnstile") :
             cookieManager.flush()
         }
 
-        val context = AcraApplication.context
+        val context = ContextHelper.context
             ?: return chain.proceed(originalRequest)
 
         val handler = Handler(Looper.getMainLooper())

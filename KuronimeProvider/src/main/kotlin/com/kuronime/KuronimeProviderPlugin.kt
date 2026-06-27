@@ -1,12 +1,12 @@
 package com.kuronime
 
 import com.thyo.animestream.plugins.AnimeStreamPlugin
-import com.thyo.animestream.plugins.Plugin
+import com.thyo.animestream.plugins.BasePlugin
 import com.thyo.animestream.extractors.*
 import android.content.Context
 
 @AnimeStreamPlugin
-class KuronimeProviderPlugin : Plugin() {
+class KuronimeProviderPlugin : BasePlugin() {
     override fun load(context: Context) {
         registerMainAPI(KuronimeProvider())
         registerExtractorAPI(PixelDrain())

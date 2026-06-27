@@ -2,10 +2,10 @@ package com.anichin
 
 import android.content.Context
 import com.thyo.animestream.plugins.AnimeStreamPlugin
-import com.thyo.animestream.plugins.Plugin
+import com.thyo.animestream.plugins.BasePlugin
 
 @AnimeStreamPlugin
-class AnichinProviderPlugin: Plugin() {
+class AnichinProviderPlugin: BasePlugin() {
     override fun load(context: Context) {
         registerMainAPI(AnichinProvider())
         registerExtractorAPI(Dailymotion())

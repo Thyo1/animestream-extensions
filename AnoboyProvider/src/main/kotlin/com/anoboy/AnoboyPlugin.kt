@@ -2,11 +2,11 @@ package com.anoboy
 
 import android.content.Context
 import com.thyo.animestream.plugins.AnimeStreamPlugin
-import com.thyo.animestream.plugins.Plugin
+import com.thyo.animestream.plugins.BasePlugin
 
 
 @AnimeStreamPlugin
-class AnoboyPlugin : Plugin() {
+class AnoboyPlugin : BasePlugin() {
     override fun load(context: Context) {
         registerMainAPI(Anoboy())
         registerExtractorAPI(BloggerExtractor())

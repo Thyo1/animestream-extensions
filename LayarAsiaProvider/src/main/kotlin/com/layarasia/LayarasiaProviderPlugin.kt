@@ -2,11 +2,11 @@ package com.layarasia
 
 import android.content.Context
 import com.thyo.animestream.plugins.AnimeStreamPlugin
-import com.thyo.animestream.plugins.Plugin
+import com.thyo.animestream.plugins.BasePlugin
 
 
 @AnimeStreamPlugin
-class LayarasiaProviderPlugin : Plugin() {
+class LayarasiaProviderPlugin : BasePlugin() {
     override fun load(context: Context) {
         registerMainAPI(LayarasiaProvider())
         registerExtractorAPI(Smoothpre())
