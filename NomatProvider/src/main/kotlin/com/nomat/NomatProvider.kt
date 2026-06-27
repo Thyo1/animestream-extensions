@@ -73,7 +73,7 @@ class NomatProvider : MainAPI() {
         }
     }
 
-    override suspend fun search(query: String, page: Int): SearchResponseList? {
+    override suspend fun search(query: String, page: Int): List<SearchResponse>? {
         val url = if (page == 1) "$mainUrl/search/$query/" else "$mainUrl/search/$query/page/$page/"
 
         val document = app.get(url, timeout = 50L).document
@@ -109,7 +109,7 @@ class NomatProvider : MainAPI() {
             }
         }
 
-        return newSearchResponseList(items)
+        return newList<SearchResponse>(items)
     }
 
     private fun Element.toRecommendResult(): SearchResponse? {
