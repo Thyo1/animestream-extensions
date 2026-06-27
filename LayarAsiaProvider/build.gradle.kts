@@ -3,7 +3,7 @@ version = 1
 cloudstream {
     description = "LayarAsia — Streaming Drama Korean, Movie and TV Series"
     language = "id"
-    authors = listOf("Miku")
+    authors = listOf("thyo")
 
     /**
      * Status int as the following:

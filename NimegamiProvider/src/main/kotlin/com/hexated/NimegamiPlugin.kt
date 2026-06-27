@@ -1,15 +1,13 @@
-
-
 package com.hexated
 
-import com.lagradost.cloudstream3.plugins.CloudstreamPlugin
-import com.lagradost.cloudstream3.plugins.Plugin
+// PERBAIKAN: Mengubah import agar sinkron dengan anotasi @AnimeStreamPlugin
+import com.thyo.animestream.plugins.AnimeStreamPlugin
+import com.thyo.animestream.plugins.Plugin
 import android.content.Context
 
-@CloudstreamPlugin
+@AnimeStreamPlugin
 class NimegamiPlugin : Plugin() {
     override fun load(context: Context) {
-    
         registerMainAPI(Nimegami())
         registerExtractorAPI(DlganExtractor())
         registerExtractorAPI(BerkasDriveExtractor())

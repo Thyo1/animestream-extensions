@@ -1,7 +1,7 @@
 version = 2
 
 cloudstream {
-    authors     = listOf("Miku")
+    authors     = listOf("thyo")
     language    = "id"
     description = "JavHey — Streaming Porn and JAV"
 

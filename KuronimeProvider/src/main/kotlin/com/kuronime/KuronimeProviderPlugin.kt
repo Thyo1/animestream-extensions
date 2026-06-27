@@ -1,11 +1,11 @@
 package com.kuronime
 
-import com.lagradost.cloudstream3.plugins.CloudstreamPlugin
-import com.lagradost.cloudstream3.plugins.Plugin
-import com.lagradost.cloudstream3.extractors.*
+import com.thyo.animestream.plugins.AnimeStreamPlugin
+import com.thyo.animestream.plugins.Plugin
+import com.thyo.animestream.extractors.*
 import android.content.Context
 
-@CloudstreamPlugin
+@AnimeStreamPlugin
 class KuronimeProviderPlugin : Plugin() {
     override fun load(context: Context) {
         registerMainAPI(KuronimeProvider())

@@ -7,7 +7,7 @@ cloudstream {
     // All of these properties are optional, you can safely remove them
 
     description = "Drakor — Streaming Drama Korean, Movie and TV Series"
-    authors = listOf("Miku")
+    authors = listOf("thyo")
 
     /**
      * Status int as the following:

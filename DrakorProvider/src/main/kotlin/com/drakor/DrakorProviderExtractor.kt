@@ -1,15 +1,19 @@
 package com.drakor
 
+import android.net.Uri
 import com.fasterxml.jackson.annotation.JsonProperty
-import com.lagradost.cloudstream3.*
-import com.lagradost.cloudstream3.APIHolder.capitalize
-import com.lagradost.cloudstream3.APIHolder.unixTimeMS
-import com.lagradost.cloudstream3.extractors.helper.AesHelper
-import com.lagradost.cloudstream3.network.WebViewResolver
-import com.lagradost.cloudstream3.utils.*
-import com.lagradost.cloudstream3.utils.AppUtils.toJson
-import com.lagradost.cloudstream3.utils.AppUtils.tryParseJson
-import com.lagradost.cloudstream3.utils.AppUtils.parseJson
+import com.thyo.animestream.*
+import com.thyo.animestream.APIHolder.capitalize
+import com.thyo.animestream.APIHolder.unixTimeMS
+import com.thyo.animestream.extractors.Jeniusplay // FIX: Import Jeniusplay ditambahkan
+import com.thyo.animestream.extractors.helper.AesHelper
+import com.thyo.animestream.extractors.helper.VidsrcHelper // FIX: Import VidsrcHelper ditambahkan
+import com.thyo.animestream.extractors.helper.VidrockHelper // FIX: Import VidrockHelper ditambahkan
+import com.thyo.animestream.network.WebViewResolver
+import com.thyo.animestream.utils.*
+import com.thyo.animestream.utils.AppUtils.toJson
+import com.thyo.animestream.utils.AppUtils.tryParseJson
+import com.thyo.animestream.utils.AppUtils.parseJson
 import com.lagradost.nicehttp.RequestBodyTypes
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
@@ -28,7 +32,6 @@ import com.drakor.DrakorProvider.Companion.RiveStreamAPI
 import javax.crypto.Mac
 import javax.crypto.spec.SecretKeySpec
 import java.security.MessageDigest
-import android.net.Uri
 
 object DrakorProviderExtractor : DrakorProvider() {
 
@@ -332,7 +335,7 @@ object DrakorProviderExtractor : DrakorProvider() {
             (item.title?.contains(title, true) == true && itemYear == year)
         } ?: return
 
-        val subjectId = matchedMedia.subjectId ?: return
+        val subjectId = matchedSubject.subjectId ?: return
         val detailPath = matchedMedia.detailPath
         val se = if (season == null) 0 else season
         val ep = if (episode == null) 0 else episode
@@ -616,6 +619,8 @@ object DrakorProviderExtractor : DrakorProvider() {
 
         app.get(url).document.select(".serversList .server").amap { server ->
             when {
+                // CATATAN PENTING: String "CloudStream Pro" ini tidak diubah jadi "AnimeStream Pro"
+                // karena ini adalah nama yang dikirim oleh server Vidsrc, bukan nama aplikasi kita.
                 server.text().equals("CloudStream Pro", ignoreCase = true) -> {
                     val hash =
                         app.get("$api/rcp/${server.attr("data-hash")}").text.substringAfter("/prorcp/")

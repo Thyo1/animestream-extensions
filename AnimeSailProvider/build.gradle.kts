@@ -7,7 +7,7 @@ cloudstream {
     // All of these properties are optional, you can safely remove them
 
     description = "AnimeSail — Streaming Anime, Donghua Subtitle Indonesia"
-     authors = listOf("Miku")
+     authors = listOf("thyo")
 
     /**
      * Status int as the following:

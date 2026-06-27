@@ -33,15 +33,19 @@ fun Project.android(configuration: BaseExtension.() -> Unit) = extensions.getByN
 subprojects {
     apply(plugin = "com.android.library")
     apply(plugin = "kotlin-android")
-    apply(plugin = "com.lagradost.cloudstream3.gradle")
+    apply(plugin = "com.lagradost.cloudstream3.gradle") // Tetap pakai ini karena ini mesin build-nya
 
-    cloudstream {
-        setRepo(System.getenv("GITHUB_REPOSITORY") ?: "https://github.com/HatsuneMikuUwU/cloudstream-extensions-uwu")
-        authors = listOf("Miku")
+            cloudstream {
+        // // setRepo("github", "Thyo1", "animestream-extensions") 
+        // Coba dikomen dulu, terkadang plugin ini bisa jalan tanpa setRepo saat build lokal
+        authors = listOf("Thyo")
     }
 
+
+
+
     android {
-        namespace = "com.miku"
+        namespace = "com.thyo.animestream.extensions"
 
         defaultConfig {
             minSdk = 21

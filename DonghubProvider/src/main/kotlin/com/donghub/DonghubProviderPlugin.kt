@@ -1,10 +1,10 @@
 package com.donghub
 
 import android.content.Context
-import com.lagradost.cloudstream3.plugins.CloudstreamPlugin
-import com.lagradost.cloudstream3.plugins.Plugin
+import com.thyo.animestream.plugins.AnimeStreamPlugin
+import com.thyo.animestream.plugins.Plugin
 
-@CloudstreamPlugin
+@AnimeStreamPlugin
 class DonghubProviderPlugin: Plugin() {
     override fun load(context: Context) {
         registerMainAPI(DonghubProvider())

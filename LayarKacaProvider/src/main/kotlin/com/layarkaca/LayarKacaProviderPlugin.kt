@@ -1,10 +1,10 @@
 package com.layarkaca
 
-import com.lagradost.cloudstream3.plugins.CloudstreamPlugin
-import com.lagradost.cloudstream3.plugins.Plugin
+import com.thyo.animestream.plugins.AnimeStreamPlugin
+import com.thyo.animestream.plugins.Plugin
 import android.content.Context
 
-@CloudstreamPlugin
+@AnimeStreamPlugin
 class LayarKacaPlugin : Plugin() {
     override fun load(context: Context) {
         registerMainAPI(LayarKacaProvider())

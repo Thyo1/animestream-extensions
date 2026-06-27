@@ -1,15 +1,19 @@
 package com.cinemax21
 
+import android.net.Uri
 import com.fasterxml.jackson.annotation.JsonProperty
-import com.lagradost.cloudstream3.*
-import com.lagradost.cloudstream3.APIHolder.capitalize
-import com.lagradost.cloudstream3.APIHolder.unixTimeMS
-import com.lagradost.cloudstream3.extractors.helper.AesHelper
-import com.lagradost.cloudstream3.network.WebViewResolver
-import com.lagradost.cloudstream3.utils.*
-import com.lagradost.cloudstream3.utils.AppUtils.toJson
-import com.lagradost.cloudstream3.utils.AppUtils.tryParseJson
-import com.lagradost.cloudstream3.utils.AppUtils.parseJson
+import com.thyo.animestream.*
+import com.thyo.animestream.APIHolder.capitalize
+import com.thyo.animestream.APIHolder.unixTimeMS
+import com.thyo.animestream.extractors.Jeniusplay // FIX: Import Jeniusplay ditambahkan
+import com.thyo.animestream.extractors.helper.AesHelper
+import com.thyo.animestream.extractors.helper.VidsrcHelper // FIX: Import VidsrcHelper ditambahkan
+import com.thyo.animestream.extractors.helper.VidrockHelper // FIX: Import VidrockHelper ditambahkan
+import com.thyo.animestream.network.WebViewResolver
+import com.thyo.animestream.utils.*
+import com.thyo.animestream.utils.AppUtils.toJson
+import com.thyo.animestream.utils.AppUtils.tryParseJson
+import com.thyo.animestream.utils.AppUtils.parseJson
 import com.lagradost.nicehttp.RequestBodyTypes
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
@@ -28,7 +32,6 @@ import com.cinemax21.Cinemax21Provider.Companion.RiveStreamAPI
 import javax.crypto.Mac
 import javax.crypto.spec.SecretKeySpec
 import java.security.MessageDigest
-import android.net.Uri
 
 object Cinemax21ProviderExtractor : Cinemax21Provider() {
 
@@ -327,6 +330,7 @@ object Cinemax21ProviderExtractor : Cinemax21Provider() {
         val api = "https://cloudnestra.com"
         val url = if (season == null) "${Cinemax21Provider.vidSrcAPI}/embed/movie?imdb=$imdbId" else "${Cinemax21Provider.vidSrcAPI}/embed/tv?imdb=$imdbId&season=$season&episode=$episode"
         app.get(url).document.select(".serversList .server").amap { server ->
+            // CATATAN: Ini sengaja JANGAN diubah jadi AnimeStream
             if (server.text().equals("CloudStream", ignoreCase = true)) {
                 val hash = app.get("$api/rcp/${server.attr("data-hash")}").text.substringAfter("/prorcp/").substringBefore("'")
                 val res = app.get("$api/prorcp/$hash").text

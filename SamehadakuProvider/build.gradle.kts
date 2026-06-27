@@ -3,7 +3,7 @@ version = 3
 cloudstream {
     language = "id"
     description = "Samehadaku — Streaming Anime Subtitle Indonesia"
-    authors = listOf("Miku")
+    authors = listOf("thyo")
     status = 1
     tvTypes = listOf(
         "AnimeMovie",

@@ -3,7 +3,7 @@ version = 3
 cloudstream {
     description = "HidoriStream — Streaming Anime Subtitle Indonesia"
     language = "id"
-    authors = listOf("Miku")
+    authors = listOf("thyo")
 
     /**
      * Status int as the following:

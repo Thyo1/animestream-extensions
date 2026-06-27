@@ -1,13 +1,14 @@
 // use an integer for version numbers
-version = 3
-
+version = 4 // Naikkan ke versi 4 agar terdeteksi sebagai update baru
 
 cloudstream {
     language = "id"
     // All of these properties are optional, you can safely remove them
 
     description = "Kuronime — Streaming Anime Subtitle Indonesia"
-     authors = listOf("Miku")
+    
+    // MENGGANTI NAMA AUTHOR MENJADI THYO 🔥
+    authors = listOf("Thyo")
 
     /**
      * Status int as the following:

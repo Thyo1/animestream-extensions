@@ -1,10 +1,10 @@
 package com.Animexin
 
-import com.lagradost.cloudstream3.plugins.BasePlugin
-import com.lagradost.cloudstream3.plugins.CloudstreamPlugin
-import com.lagradost.cloudstream3.extractors.Dailymotion
+import com.thyo.animestream.plugins.BasePlugin
+import com.thyo.animestream.plugins.AnimeStreamPlugin
+import com.thyo.animestream.extractors.Dailymotion
 
-@CloudstreamPlugin
+@AnimeStreamPlugin
 class AnimexinProvider: BasePlugin() {
     override fun load() {
         registerMainAPI(Animexin())

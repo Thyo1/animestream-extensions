@@ -1,9 +1,9 @@
 package com.layarkaca
 
-import com.lagradost.api.Log
-import com.lagradost.cloudstream3.*
-import com.lagradost.cloudstream3.LoadResponse.Companion.addTrailer
-import com.lagradost.cloudstream3.utils.*
+import com.thyo.api.Log
+import com.thyo.animestream.*
+import com.thyo.animestream.LoadResponse.Companion.addTrailer
+import com.thyo.animestream.utils.*
 import org.json.JSONObject
 import org.jsoup.nodes.Element
 import java.net.URI

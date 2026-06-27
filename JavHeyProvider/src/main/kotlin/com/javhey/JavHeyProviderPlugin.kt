@@ -1,10 +1,10 @@
 package com.javhey
 
-import com.lagradost.cloudstream3.plugins.CloudstreamPlugin
-import com.lagradost.cloudstream3.plugins.Plugin // <--- PENTING: Ini class induknya
+import com.thyo.animestream.plugins.AnimeStreamPlugin
+import com.thyo.animestream.plugins.Plugin // <--- PENTING: Ini class induknya
 import android.content.Context
 
-@CloudstreamPlugin
+@AnimeStreamPlugin
 class JavHeyProviderPlugin : Plugin() {
     override fun load(context: Context) {
         registerMainAPI(JavHeyProvider())

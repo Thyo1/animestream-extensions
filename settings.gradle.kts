@@ -1,4 +1,4 @@
-rootProject.name = "CloudstreamPlugins"
+rootProject.name = "AnimeStreamPlugins" // Sudah diubah ke AnimeStream 🔥
 
 // This file sets what projects are included. All new projects should get automatically included unless specified in "disabled" variable.
 val disabled = listOf<String>()

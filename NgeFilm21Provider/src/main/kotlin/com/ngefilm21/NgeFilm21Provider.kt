@@ -1,7 +1,7 @@
 package com.ngefilm21
 
-import com.lagradost.cloudstream3.*
-import com.lagradost.cloudstream3.utils.*
+import com.thyo.animestream.*
+import com.thyo.animestream.utils.*
 import org.jsoup.nodes.Element
 import javax.crypto.Cipher
 import javax.crypto.spec.IvParameterSpec

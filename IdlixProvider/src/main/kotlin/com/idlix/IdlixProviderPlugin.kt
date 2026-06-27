@@ -1,9 +1,9 @@
 package com.idlix
 
-import com.lagradost.cloudstream3.plugins.BasePlugin
-import com.lagradost.cloudstream3.plugins.CloudstreamPlugin
+import com.thyo.animestream.plugins.BasePlugin
+import com.thyo.animestream.plugins.AnimeStreamPlugin
 
-@CloudstreamPlugin
+@AnimeStreamPlugin
 class IdlixProviderPlugin: BasePlugin() {
     override fun load() {
         registerMainAPI(IdlixProvider())

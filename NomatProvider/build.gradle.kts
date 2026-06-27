@@ -3,7 +3,7 @@ version = 1
 cloudstream {
     description = "Nomat — Streaming Movie and TV Series"
     language = "id"
-    authors = listOf("Miku")
+    authors = listOf("thyo")
 
     /**
      * Status int as the following:
