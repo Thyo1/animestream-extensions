@@ -47,7 +47,7 @@ val document = app.get("$mainUrl/${request.data}&page=$page").documentLarge
 
     override suspend fun search(query: String,page: Int): List<SearchResponse> {
         val document = app.get("${mainUrl}/page/$page/?s=$query").documentLarge
-        val results = document.select("div.listupd > article").mapNotNull { it.toSearchResult() }.toNewList<SearchResponse>()
+        val results = document.select("div.listupd > article").mapNotNull { it.toSearchResult() }
         return results
     }
 
