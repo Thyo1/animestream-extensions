@@ -100,3 +100,9 @@ subprojects {
 tasks.register<Delete>("clean") {
     delete(rootProject.layout.buildDirectory)
 }
+
+subprojects {
+    dependencies {
+        compileOnly("com.github.Thyo1:animestream:master-SNAPSHOT")
+    }
+}
