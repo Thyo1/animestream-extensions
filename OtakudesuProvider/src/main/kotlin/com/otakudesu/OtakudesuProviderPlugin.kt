@@ -1,8 +1,8 @@
 package com.otakudesu
 
-import com.lagradost.cloudstream3.plugins.AnimeStreamPlugin
-import com.lagradost.cloudstream3.plugins.Plugin
-import com.lagradost.cloudstream3.extractors.*
+import com.thyo.animestream.plugins.AnimeStreamPlugin
+import com.thyo.animestream.plugins.Plugin
+import com.thyo.animestream.extractors.*
 import android.content.Context
 
 @AnimeStreamPlugin

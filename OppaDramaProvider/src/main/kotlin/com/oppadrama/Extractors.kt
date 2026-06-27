@@ -1,15 +1,15 @@
 package com.oppadrama
 
 import com.thyo.api.Log
-import com.lagradost.cloudstream3.app
-import com.lagradost.cloudstream3.extractors.VidHidePro
-import com.lagradost.cloudstream3.utils.newExtractorLink
-import com.lagradost.cloudstream3.utils.ExtractorLink
-import com.lagradost.cloudstream3.SubtitleFile
-import com.lagradost.cloudstream3.utils.ExtractorApi
-import com.lagradost.cloudstream3.utils.*
-import com.lagradost.cloudstream3.utils.Qualities
-import com.lagradost.cloudstream3.utils.ExtractorLinkType
+import com.thyo.animestream.app
+import com.thyo.animestream.extractors.VidHidePro
+import com.thyo.animestream.utils.newExtractorLink
+import com.thyo.animestream.utils.ExtractorLink
+import com.thyo.animestream.SubtitleFile
+import com.thyo.animestream.utils.ExtractorApi
+import com.thyo.animestream.utils.*
+import com.thyo.animestream.utils.Qualities
+import com.thyo.animestream.utils.ExtractorLinkType
 
 
 

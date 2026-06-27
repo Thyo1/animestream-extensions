@@ -2,11 +2,11 @@ package com.pencurimovie
 
 import com.thyo.api.Log
 import org.jsoup.nodes.Element
-import com.lagradost.cloudstream3.*
-import com.lagradost.cloudstream3.LoadResponse.Companion.addActors
-import com.lagradost.cloudstream3.LoadResponse.Companion.addScore
-import com.lagradost.cloudstream3.LoadResponse.Companion.addTrailer
-import com.lagradost.cloudstream3.utils.*
+import com.thyo.animestream.*
+import com.thyo.animestream.LoadResponse.Companion.addActors
+import com.thyo.animestream.LoadResponse.Companion.addScore
+import com.thyo.animestream.LoadResponse.Companion.addTrailer
+import com.thyo.animestream.utils.*
 
 
 class PencurimovieProvider : MainAPI() {

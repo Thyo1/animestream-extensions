@@ -1,8 +1,8 @@
 package com.nomat
 
 import com.thyo.api.Log
-import com.lagradost.cloudstream3.app
-import com.lagradost.cloudstream3.extractors.VidHidePro
+import com.thyo.animestream.app
+import com.thyo.animestream.extractors.VidHidePro
 
 
 

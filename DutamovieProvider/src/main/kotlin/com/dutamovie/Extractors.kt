@@ -1,11 +1,11 @@
 package com.dutamovie
 
 import com.fasterxml.jackson.annotation.JsonProperty
-import com.lagradost.cloudstream3.*
-import com.lagradost.cloudstream3.extractors.StreamWishExtractor
-import com.lagradost.cloudstream3.extractors.VidStack
-import com.lagradost.cloudstream3.utils.*
-import com.lagradost.cloudstream3.utils.M3u8Helper.Companion.generateM3u8
+import com.thyo.animestream.*
+import com.thyo.animestream.extractors.StreamWishExtractor
+import com.thyo.animestream.extractors.VidStack
+import com.thyo.animestream.utils.*
+import com.thyo.animestream.utils.M3u8Helper.Companion.generateM3u8
 import java.net.URI
 
 open class Dingtezuni : ExtractorApi() {

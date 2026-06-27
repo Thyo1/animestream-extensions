@@ -2,12 +2,12 @@ package com.idlix
 
 import com.fasterxml.jackson.annotation.JsonProperty
 import com.thyo.api.Log
-import com.lagradost.cloudstream3.*
-import com.lagradost.cloudstream3.LoadResponse.Companion.addActors
-import com.lagradost.cloudstream3.LoadResponse.Companion.addTrailer
-import com.lagradost.cloudstream3.extractors.helper.AesHelper
-import com.lagradost.cloudstream3.utils.*
-import com.lagradost.cloudstream3.utils.AppUtils.toJson
+import com.thyo.animestream.*
+import com.thyo.animestream.LoadResponse.Companion.addActors
+import com.thyo.animestream.LoadResponse.Companion.addTrailer
+import com.thyo.animestream.extractors.helper.AesHelper
+import com.thyo.animestream.utils.*
+import com.thyo.animestream.utils.AppUtils.toJson
 import org.jsoup.nodes.Element
 import java.net.URI
 

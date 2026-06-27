@@ -1,8 +1,8 @@
 package com.donghub
 
 import com.thyo.api.Log
-import com.lagradost.cloudstream3.*
-import com.lagradost.cloudstream3.utils.*
+import com.thyo.animestream.*
+import com.thyo.animestream.utils.*
 
 class ArchiveOrgExtractor : ExtractorApi() {
     override val name = "ArchiveOrg"

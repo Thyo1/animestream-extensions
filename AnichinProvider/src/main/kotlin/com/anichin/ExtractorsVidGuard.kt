@@ -1,12 +1,12 @@
 package com.anichin
 
 import com.thyo.api.Log
-import com.lagradost.cloudstream3.SubtitleFile
-import com.lagradost.cloudstream3.app
-import com.lagradost.cloudstream3.utils.AppUtils
-import com.lagradost.cloudstream3.utils.ExtractorApi
-import com.lagradost.cloudstream3.utils.ExtractorLink
-import com.lagradost.cloudstream3.utils.newExtractorLink
+import com.thyo.animestream.SubtitleFile
+import com.thyo.animestream.app
+import com.thyo.animestream.utils.AppUtils
+import com.thyo.animestream.utils.ExtractorApi
+import com.thyo.animestream.utils.ExtractorLink
+import com.thyo.animestream.utils.newExtractorLink
 import org.mozilla.javascript.Context
 import org.mozilla.javascript.NativeJSON
 import org.mozilla.javascript.NativeObject

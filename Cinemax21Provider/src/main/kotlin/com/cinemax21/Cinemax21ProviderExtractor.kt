@@ -2,18 +2,18 @@ package com.cinemax21
 
 import android.net.Uri
 import com.fasterxml.jackson.annotation.JsonProperty
-import com.lagradost.cloudstream3.*
-import com.lagradost.cloudstream3.APIHolder.capitalize
-import com.lagradost.cloudstream3.APIHolder.unixTimeMS
-import com.lagradost.cloudstream3.extractors.Jeniusplay // FIX: Import Jeniusplay ditambahkan
-import com.lagradost.cloudstream3.extractors.helper.AesHelper
-import com.lagradost.cloudstream3.extractors.helper.VidsrcHelper // FIX: Import VidsrcHelper ditambahkan
-import com.lagradost.cloudstream3.extractors.helper.VidrockHelper // FIX: Import VidrockHelper ditambahkan
-import com.lagradost.cloudstream3.network.WebViewResolver
-import com.lagradost.cloudstream3.utils.*
-import com.lagradost.cloudstream3.utils.AppUtils.toJson
-import com.lagradost.cloudstream3.utils.AppUtils.tryParseJson
-import com.lagradost.cloudstream3.utils.AppUtils.parseJson
+import com.thyo.animestream.*
+import com.thyo.animestream.APIHolder.capitalize
+import com.thyo.animestream.APIHolder.unixTimeMS
+import com.thyo.animestream.extractors.Jeniusplay // FIX: Import Jeniusplay ditambahkan
+import com.thyo.animestream.extractors.helper.AesHelper
+import com.thyo.animestream.extractors.helper.VidsrcHelper // FIX: Import VidsrcHelper ditambahkan
+import com.thyo.animestream.extractors.helper.VidrockHelper // FIX: Import VidrockHelper ditambahkan
+import com.thyo.animestream.network.WebViewResolver
+import com.thyo.animestream.utils.*
+import com.thyo.animestream.utils.AppUtils.toJson
+import com.thyo.animestream.utils.AppUtils.tryParseJson
+import com.thyo.animestream.utils.AppUtils.parseJson
 import com.lagradost.nicehttp.RequestBodyTypes
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll

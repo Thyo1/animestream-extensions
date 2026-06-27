@@ -8,7 +8,7 @@ import android.webkit.CookieManager
 import android.webkit.SslErrorHandler
 import android.webkit.WebView
 import android.webkit.WebViewClient
-import com.lagradost.cloudstream3.AcraApplication
+import com.thyo.animestream.AcraApplication
 import okhttp3.Interceptor
 import okhttp3.Response
 import java.util.concurrent.atomic.AtomicReference
