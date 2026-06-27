@@ -6,6 +6,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinJvmCompile
 
 buildscript {
     repositories {
+    maven { url = uri("https://jitpack.io") }
         google()
         mavenCentral()
         maven("https://jitpack.io")
@@ -20,6 +21,7 @@ buildscript {
 
 allprojects {
     repositories {
+    maven { url = uri("https://jitpack.io") }
         google()
         mavenCentral()
         maven("https://jitpack.io")
