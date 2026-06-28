@@ -38,10 +38,10 @@ subprojects {
     apply(plugin = "com.lagradost.cloudstream3.gradle") // Tetap pakai ini karena ini mesin build-nya
 
             cloudstream {
-        // // setRepo("github", "Thyo1", "animestream-extensions") 
-        // Coba dikomen dulu, terkadang plugin ini bisa jalan tanpa setRepo saat build lokal
+        setRepo("github", "Thyo1", "animestream-extensions") 
         authors = listOf("Thyo")
     }
+
 
 
 
