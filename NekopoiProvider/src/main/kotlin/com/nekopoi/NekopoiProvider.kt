@@ -19,78 +19,21 @@ class JwtSessionInterceptor(private val targetCookie: String = "sl_jwt_session")
     @SuppressLint("SetJavaScriptEnabled")
     override fun intercept(chain: Interceptor.Chain): Response {
         val originalRequest = chain.request()
-        val url = originalRequest.url.toString()
         val domainUrl = "${originalRequest.url.scheme}://${originalRequest.url.host}"
         
         val cookieManager = CookieManager.getInstance()
         cookieManager.setAcceptCookie(true)
 
         val standardUserAgent = "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Mobile Safari/537.36"
+        val currentCookies = cookieManager.getCookie(domainUrl) ?: ""
 
-        var currentCookies = cookieManager.getCookie(domainUrl) ?: ""
-        var needsRefresh = false
-        var initialResponse: Response? = null
-
-        if (currentCookies.contains(targetCookie)) {
-            val requestBuilder = originalRequest.newBuilder()
-                .removeHeader("User-Agent")
-                .addHeader("User-Agent", standardUserAgent)
-                .removeHeader("Cookie")
-                .addHeader("Cookie", currentCookies)
-
-            initialResponse = chain.proceed(requestBuilder.build())
-
-            if (initialResponse.code in listOf(403, 503, 202)) {
-                needsRefresh = true
-                initialResponse.close()
-            } else {
-                return initialResponse
-            }
-        } else {
-            needsRefresh = true
-        }
-
-        if (needsRefresh) {
-                    }
-                }
-
-                var attempts = 0
-                val maxAttempts = 25 
-                while (attempts < maxAttempts) {
-                    Thread.sleep(1000)
-                    val checkCookies = cookieManager.getCookie(domainUrl) ?: ""
-
-                    if ((checkCookies.contains(targetCookie) && checkCookies.contains("sl_jwt_sign")) || isResolved) {
-                        cookieManager.flush()
-                        break
-                    }
-                    attempts++
-                }
-
-                handler.post {
-                    try {
-                    } catch (e: Exception) {
-                    }
-                }
-            }
-
-            currentCookies = cookieManager.getCookie(domainUrl) ?: ""
-            
-            val newRequestBuilder = originalRequest.newBuilder()
-                .removeHeader("User-Agent")
-                .addHeader("User-Agent", standardUserAgent)
-                .removeHeader("Cookie")
-                .addHeader("Cookie", currentCookies)
-
-            return chain.proceed(newRequestBuilder.build())
-        }
-
-        val finalRequest = originalRequest.newBuilder()
+        val requestBuilder = originalRequest.newBuilder()
             .removeHeader("User-Agent")
             .addHeader("User-Agent", standardUserAgent)
-            .build()
-            
-        return initialResponse ?: chain.proceed(finalRequest)
+            .removeHeader("Cookie")
+            .addHeader("Cookie", currentCookies)
+
+        return chain.proceed(requestBuilder.build())
     }
 }
 
@@ -465,6 +408,7 @@ class NekopoiProvider : MainAPI() {
                 loadExtractor(nestedSrc, iframeSrc, subtitleCallback, callback)
             }
         } catch (e: Exception) {
+            e.printStackTrace()
         }
     }
 
@@ -529,6 +473,7 @@ class NekopoiProvider : MainAPI() {
                 }
             }
         } catch (e: Exception) {
+            e.printStackTrace()
         }
         
         return res?.headers?.get("location")
