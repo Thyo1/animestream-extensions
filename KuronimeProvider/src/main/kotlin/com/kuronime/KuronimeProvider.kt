@@ -182,7 +182,6 @@ class KuronimeProvider : MainAPI() {
             } catch (e: Exception) {}
         }
 
-        val logoUrl = fetchTmdbLogoUrl(
             tmdbAPI = "https://api.themoviedb.org/3",
             apiKey = "98ae14df2b8d8f8f8136499daf79f0e0",
             type = type,
@@ -240,7 +239,6 @@ class KuronimeProvider : MainAPI() {
             this.japName = animeMetaData?.titles?.get("ja") ?: animeMetaData?.titles?.get("x-jat")
             this.posterUrl = tracker?.image ?: poster
             this.backgroundPosterUrl = backgroundposter
-            try { this.logoUrl = logoUrl } catch(_:Throwable){}
             this.year = year
             addEpisodes(DubStatus.Subbed, episodes)
             this.showStatus = status
