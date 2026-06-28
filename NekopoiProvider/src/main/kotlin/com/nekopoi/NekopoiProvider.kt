@@ -1,14 +1,7 @@
 package com.nekopoi
 
 import android.annotation.SuppressLint
-import android.net.http.SslError
-import android.os.Handler
-import android.os.Looper
 import android.webkit.CookieManager
-import android.webkit.SslErrorHandler
-import android.webkit.WebChromeClient
-import android.webkit.WebView
-import android.webkit.WebViewClient
 import com.thyo.animestream.*
 import com.thyo.animestream.utils.*
 import com.lagradost.nicehttp.NiceResponse
@@ -58,58 +51,6 @@ class JwtSessionInterceptor(private val targetCookie: String = "sl_jwt_session")
         }
 
         if (needsRefresh) {
-            val context = AcraApplication.context
-            if (context != null) {
-                val handler = Handler(Looper.getMainLooper())
-                var webView: WebView? = null
-                var isResolved = false
-
-                handler.post {
-                    try {
-                        val newWebView = WebView(context)
-                        webView = newWebView
-
-                        cookieManager.setAcceptThirdPartyCookies(newWebView, true)
-
-                        newWebView.settings.apply {
-                            javaScriptEnabled = true
-                            domStorageEnabled = true
-                            databaseEnabled = true
-                            useWideViewPort = true
-                            loadWithOverviewMode = true
-                            mixedContentMode = android.webkit.WebSettings.MIXED_CONTENT_ALWAYS_ALLOW
-                            cacheMode = android.webkit.WebSettings.LOAD_NO_CACHE
-                            userAgentString = standardUserAgent
-                        }
-                        
-                        newWebView.clearCache(true)
-                        newWebView.clearHistory()
-                        
-                        newWebView.webChromeClient = WebChromeClient()
-                        newWebView.webViewClient = object : WebViewClient() {
-                            @SuppressLint("WebViewClientOnReceivedSslError")
-                            override fun onReceivedSslError(view: WebView?, handler: SslErrorHandler?, error: SslError?) {
-                                handler?.proceed() 
-                            }
-
-                            override fun onPageFinished(view: WebView?, url: String?) {
-                                super.onPageFinished(view, url)
-                                val checkCookies = cookieManager.getCookie(domainUrl) ?: ""
-                                if (checkCookies.contains(targetCookie) && checkCookies.contains("sl_jwt_sign")) {
-                                    isResolved = true
-                                }
-                            }
-                        }
-
-                        val safeLineCookies = listOf("sl-challenge-jwt", "sl-challenge-server", "sl-session", "sl_jwt_session", "sl_jwt_sign", "comentario_commenter_session")
-                        safeLineCookies.forEach { cookie ->
-                            cookieManager.setCookie(domainUrl, "$cookie=; Max-Age=0")
-                        }
-                        cookieManager.flush()
-
-                        newWebView.loadUrl(url)
-                    } catch (e: Exception) {
-                        e.printStackTrace()
                     }
                 }
 
@@ -128,10 +69,7 @@ class JwtSessionInterceptor(private val targetCookie: String = "sl_jwt_session")
 
                 handler.post {
                     try {
-                        webView?.stopLoading()
-                        webView?.destroy()
                     } catch (e: Exception) {
-                        e.printStackTrace()
                     }
                 }
             }
@@ -527,7 +465,6 @@ class NekopoiProvider : MainAPI() {
                 loadExtractor(nestedSrc, iframeSrc, subtitleCallback, callback)
             }
         } catch (e: Exception) {
-            e.printStackTrace()
         }
     }
 
@@ -592,7 +529,6 @@ class NekopoiProvider : MainAPI() {
                 }
             }
         } catch (e: Exception) {
-            e.printStackTrace()
         }
         
         return res?.headers?.get("location")
