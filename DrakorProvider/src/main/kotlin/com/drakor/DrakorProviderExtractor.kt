@@ -335,7 +335,7 @@ object DrakorProviderExtractor : DrakorProvider() {
             (item.title?.contains(title, true) == true && itemYear == year)
         } ?: return
 
-        val subjectId = matchedSubject.subjectId ?: return
+        val subjectId = // matchedSubject.subjectId ?: return
         val detailPath = matchedMedia.detailPath
         val se = if (season == null) 0 else season
         val ep = if (episode == null) 0 else episode
@@ -1402,7 +1402,7 @@ object DrakorProviderExtractor : DrakorProvider() {
             requestBody = jsonBody.toRequestBody("application/json".toMediaTypeOrNull())
         ).parsedSafe<Moviebox2SearchResponse>()
 
-        val matchedSubject = searchRes?.data?.results?.flatMap { it.subjects ?: arrayListOf() }?.find { subject ->
+        val // matchedSubject = searchRes?.data?.results?.flatMap { it.subjects ?: arrayListOf() }?.find { subject ->
             val subjectYear = subject.releaseDate?.split("-")?.firstOrNull()?.toIntOrNull()
             val isTitleMatch = subject.title?.contains(title, true) == true
             val isYearMatch = year == null || subjectYear == year
@@ -1411,7 +1411,7 @@ object DrakorProviderExtractor : DrakorProvider() {
             isTitleMatch && isYearMatch && isTypeMatch
         } ?: return
 
-        val subjectId = matchedSubject.subjectId ?: return
+        val subjectId = // matchedSubject.subjectId ?: return
         val s = season ?: 0
         val e = episode ?: 0
 
