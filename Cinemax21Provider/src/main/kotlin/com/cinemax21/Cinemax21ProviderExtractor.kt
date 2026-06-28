@@ -7,8 +7,6 @@ import com.thyo.animestream.APIHolder.capitalize
 import com.thyo.animestream.APIHolder.unixTimeMS
 import com.thyo.animestream.extractors.Jeniusplay // FIX: Import Jeniusplay ditambahkan
 import com.thyo.animestream.extractors.helper.AesHelper
-import com.thyo.animestream.extractors.helper.VidsrcHelper // FIX: Import VidsrcHelper ditambahkan
-import com.thyo.animestream.extractors.helper.VidrockHelper // FIX: Import VidrockHelper ditambahkan
 import com.thyo.animestream.network.WebViewResolver
 import com.thyo.animestream.utils.*
 import com.thyo.animestream.utils.AppUtils.toJson
@@ -293,7 +291,7 @@ object Cinemax21ProviderExtractor : Cinemax21Provider() {
     }
     
     
-    suspend fun invokeVidsrccc(
+    // // suspend fun invokeVidsrccc(
         tmdbId: Int?, imdbId: String?, season: Int?, episode: Int?,
         subtitleCallback: (SubtitleFile) -> Unit, callback: (ExtractorLink) -> Unit,
     ) {
@@ -324,7 +322,7 @@ object Cinemax21ProviderExtractor : Cinemax21Provider() {
         }
     }
 
-    suspend fun invokeVidsrc(
+    // suspend fun invokeVidsrc(
         imdbId: String?, season: Int?, episode: Int?, subtitleCallback: (SubtitleFile) -> Unit, callback: (ExtractorLink) -> Unit,
     ) {
         val api = "https://cloudnestra.com"
@@ -451,7 +449,7 @@ object Cinemax21ProviderExtractor : Cinemax21Provider() {
         }
     }
 
-    suspend fun invokeVidrock(
+    // suspend fun invokeVidrock(
         tmdbId: Int?, season: Int?, episode: Int?, subtitleCallback: (SubtitleFile) -> Unit, callback: (ExtractorLink) -> Unit, subAPI: String = "https://sub.vdrk.site"
     ) {
         val type = if (season == null) "movie" else "tv"

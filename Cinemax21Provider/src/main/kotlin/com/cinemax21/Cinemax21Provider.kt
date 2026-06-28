@@ -11,8 +11,6 @@ import com.cinemax21.Cinemax21ProviderExtractor.invokeMapple
 import com.cinemax21.Cinemax21ProviderExtractor.invokeSuperembed
 import com.cinemax21.Cinemax21ProviderExtractor.invokeVidfast
 import com.cinemax21.Cinemax21ProviderExtractor.invokeVidlink
-import com.cinemax21.Cinemax21ProviderExtractor.invokeVidsrc
-import com.cinemax21.Cinemax21ProviderExtractor.invokeVidsrccc
 import com.cinemax21.Cinemax21ProviderExtractor.invokeVixsrc
 import com.cinemax21.Cinemax21ProviderExtractor.invokeWatchsomuch
 import com.cinemax21.Cinemax21ProviderExtractor.invokeWyzie
@@ -25,7 +23,6 @@ import com.thyo.animestream.LoadResponse.Companion.addTrailer
 import com.thyo.animestream.metaproviders.TmdbProvider
 import com.thyo.animestream.LoadResponse.Companion.addImdbId
 import com.thyo.animestream.LoadResponse.Companion.addTMDbId
-import com.thyo.animestream.network.CloudflareKiller
 import com.thyo.animestream.utils.AppUtils.parseJson
 import com.thyo.animestream.utils.AppUtils.toJson
 import com.thyo.animestream.utils.ExtractorLink
@@ -42,7 +39,6 @@ open class Cinemax21Provider : TmdbProvider() {
         TvType.TvSeries,
     )
 
-    val wpRedisInterceptor by lazy { CloudflareKiller() }
 
     companion object {
         private const val tmdbAPI = "https://api.themoviedb.org/3"
@@ -377,7 +373,6 @@ open class Cinemax21Provider : TmdbProvider() {
                 invokeVidlink(res.id, res.season, res.episode, callback)
             },
             {
-                invokeVidsrccc(
                     res.id,
                     res.imdbId,
                     res.season,
@@ -414,7 +409,6 @@ open class Cinemax21Provider : TmdbProvider() {
                 if (!res.isAnime) invokeRiveStream(res.id, res.season, res.episode, callback)
             },
             {
-                invokeVidsrc(
                     res.imdbId,
                     res.season,
                     res.episode,
