@@ -5,10 +5,10 @@ import com.fasterxml.jackson.annotation.JsonProperty
 import com.thyo.animestream.*
 import com.thyo.animestream.APIHolder.capitalize
 import com.thyo.animestream.APIHolder.unixTimeMS
-import com.thyo.animestream.extractors.Jeniusplay // FIX: Import Jeniusplay ditambahkan
+import com.thyo.animestream.extractors.Jeniusplay
 import com.thyo.animestream.extractors.helper.AesHelper
-import com.thyo.animestream.extractors.helper.VidsrcHelper // FIX: Import VidsrcHelper ditambahkan
-import com.thyo.animestream.extractors.helper.VidrockHelper // FIX: Import VidrockHelper ditambahkan
+import com.thyo.animestream.extractors.helper.VidsrcHelper
+import com.thyo.animestream.extractors.helper.VidrockHelper
 import com.thyo.animestream.network.WebViewResolver
 import com.thyo.animestream.utils.*
 import com.thyo.animestream.utils.AppUtils.toJson
@@ -308,6 +308,7 @@ object DrakorProviderExtractor : DrakorProvider() {
     private data class KisskhKey(@JsonProperty("key") val key: String?)
     private data class KisskhSources(@JsonProperty("Video") val video: String?, @JsonProperty("ThirdParty") val thirdParty: String?)
     private data class KisskhSubtitle(@JsonProperty("src") val src: String?, @JsonProperty("label") val label: String?)
+    
     suspend fun invokeMoviebox(
         title: String,
         year: Int?,
@@ -335,7 +336,7 @@ object DrakorProviderExtractor : DrakorProvider() {
             (item.title?.contains(title, true) == true && itemYear == year)
         } ?: return
 
-        val subjectId = // matchedSubject.subjectId ?: return
+        val subjectId = matchedMedia.subjectId ?: return // FIX DARI TYPO MATCHEDSUBJECT
         val detailPath = matchedMedia.detailPath
         val se = if (season == null) 0 else season
         val ep = if (episode == null) 0 else episode
@@ -603,6 +604,7 @@ object DrakorProviderExtractor : DrakorProvider() {
         }
 
     }
+    
     suspend fun invokeVidsrc(
         imdbId: String?,
         season: Int?,
@@ -619,8 +621,6 @@ object DrakorProviderExtractor : DrakorProvider() {
 
         app.get(url).document.select(".serversList .server").amap { server ->
             when {
-                // CATATAN PENTING: String "CloudStream Pro" ini tidak diubah jadi "AnimeStream Pro"
-                // karena ini adalah nama yang dikirim oleh server Vidsrc, bukan nama aplikasi kita.
                 server.text().equals("CloudStream Pro", ignoreCase = true) -> {
                     val hash =
                         app.get("$api/rcp/${server.attr("data-hash")}").text.substringAfter("/prorcp/")
@@ -1402,7 +1402,7 @@ object DrakorProviderExtractor : DrakorProvider() {
             requestBody = jsonBody.toRequestBody("application/json".toMediaTypeOrNull())
         ).parsedSafe<Moviebox2SearchResponse>()
 
-        val // matchedSubject = searchRes?.data?.results?.flatMap { it.subjects ?: arrayListOf() }?.find { subject ->
+        val matchedSubject = searchRes?.data?.results?.flatMap { it.subjects ?: arrayListOf() }?.find { subject ->
             val subjectYear = subject.releaseDate?.split("-")?.firstOrNull()?.toIntOrNull()
             val isTitleMatch = subject.title?.contains(title, true) == true
             val isYearMatch = year == null || subjectYear == year
@@ -1411,7 +1411,7 @@ object DrakorProviderExtractor : DrakorProvider() {
             isTitleMatch && isYearMatch && isTypeMatch
         } ?: return
 
-        val subjectId = // matchedSubject.subjectId ?: return
+        val subjectId = matchedSubject.subjectId ?: return
         val s = season ?: 0
         val e = episode ?: 0
 
