@@ -37,8 +37,8 @@ subprojects {
     apply(plugin = "kotlin-android")
     apply(plugin = "com.lagradost.cloudstream3.gradle") // Tetap pakai ini karena ini mesin build-nya
 
-            cloudstream {
-        setRepo("github", "Thyo1", "animestream-extensions") 
+                cloudstream {
+        setRepo("Thyo1", "animestream-extensions") 
         authors = listOf("Thyo")
     }
 
