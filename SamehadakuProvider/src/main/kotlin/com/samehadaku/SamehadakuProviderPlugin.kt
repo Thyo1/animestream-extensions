@@ -12,8 +12,6 @@ class SamehadakuProviderPlugin : BasePlugin() {
         registerExtractorAPI(PixelDrain())
         registerExtractorAPI(Gofile())
         registerExtractorAPI(Krakenfiles())
-        registerExtractorAPI(Ryderjet())
-        registerExtractorAPI(VidHideHub())
         registerExtractorAPI(VidHidePro1())
         registerExtractorAPI(VidHidePro2())
         registerExtractorAPI(VidHidePro3())

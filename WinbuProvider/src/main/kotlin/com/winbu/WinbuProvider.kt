@@ -238,7 +238,7 @@ class WinbuProvider : MainAPI() {
             this.japName = animeMetaData?.titles?.get("ja") ?: animeMetaData?.titles?.get("x-jat")
             this.posterUrl = tracker?.image ?: poster
             this.backgroundPosterUrl = backgroundposter
-            try { this.logoUrl = logoUrl } catch(_:Throwable){}
+            // logoUrl dimatikan
             addEpisodes(DubStatus.Subbed, finalEpisodes)
             this.plot = finalPlot
             this.tags = tags
